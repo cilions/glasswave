@@ -1,0 +1,21 @@
+# Modal
+
+A dialog component that appears on top of the page content.
+
+## Usage
+
+```tsx
+import { Modal } from 'glasswave';
+
+function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="p-4">
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <p>Modal content</p>
+      </Modal>
+    </div>
+  );
+}
+```

@@ -1,0 +1,19 @@
+# Checkbox
+
+A control that allows the user to toggle between checked and not checked.
+
+## Usage
+
+```tsx
+import { Checkbox } from 'glasswave';
+
+function App() {
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <div className="p-4">
+      <Checkbox checked={checked} onChange={setChecked} />
+    </div>
+  );
+}
+```

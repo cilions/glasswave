@@ -1,0 +1,23 @@
+# Dropdown
+
+A menu that appears when a trigger is clicked.
+
+## Usage
+
+```tsx
+import { Dropdown } from 'glasswave';
+
+function App() {
+  const items = [
+    { label: 'Edit', onClick: () => console.log('Edit') },
+    { label: 'Delete', onClick: () => console.log('Delete') },
+    { label: 'Share', onClick: () => console.log('Share') },
+  ];
+
+  return (
+    <div className="p-4">
+      <Dropdown trigger={<button>Menu</button>} items={items} />
+    </div>
+  );
+}
+```
