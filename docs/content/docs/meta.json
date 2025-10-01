@@ -1,0 +1,23 @@
+{
+  "title": "Docs",
+  "root": true,
+  "pages": [
+    "---Get Started---",
+    "index",
+    "installation",
+
+    "---Components---",
+    "components/alert",
+    "components/button",
+    "components/checkbox",
+    "components/dropdown",
+    "components/input",
+    "components/modal",
+    "components/radio",
+    "components/select",
+    "components/switch",
+    "components/textarea",
+    "components/toast",
+    "components/tooltip"
+  ]
+}
