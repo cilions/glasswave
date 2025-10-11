@@ -1,29 +1,11 @@
-# GlassWave
+# Glasswave
 
-## Installation
+A modern CSS components library for building beautiful, adaptive interfaces with smooth glass-like visuals and effortless theming.
 
-```sh
-npm install glasswave
-# or
-yarn add glasswave
-# or
-pnpm add glasswave
-# or
-bun add glasswave
-```
+## Documentation
 
-## Usage
+Visit https://glasswave-ui.vercel.app/docs to view the documentation.
 
-### Button Component
+## License
 
-```jsx
-import { Button } from 'glasswave';
-
-function App() {
-  return (
-    <div className="p-4">
-      <Button>Default Button</Button>
-    </div>
-  );
-}
-```
+Licensed under the [MIT license](https://github.com/cilions/glasswave/blob/main/LICENSE).

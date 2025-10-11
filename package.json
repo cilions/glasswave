@@ -1,37 +1,39 @@
 {
   "name": "glasswave",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "default": "./dist/index.js"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc && ./node_modules/.bin/postcss index.css -o dist/index.css",
-    "dev": "tsc --watch & ./node_modules/.bin/postcss index.css -o dist/index.css --watch"
+    "build": "tsc && pnpm exec postcss index.css -o dist/index.css",
+    "dev": "tsc --watch & pnpm exec postcss index.css -o dist/index.css --watch",
+    "lint": "biome check",
+    "format": "biome format --write"
   },
   "peerDependencies": {
-    "react": ">=18 <20",
-    "react-dom": ">=18 <20"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.13",
-    "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.9",
-    "postcss": "^8.5.6",
-    "typescript": "^5.5.0"
+    "react": "^18",
+    "react-dom": "^18"
   },
   "dependencies": {
-    "@next/mdx": "^15.5.3"
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "typescript": "^5.5.0"
   }
 }
