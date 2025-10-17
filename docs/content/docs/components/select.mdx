@@ -6,13 +6,18 @@ description: Select dropdown for options.
 ## Usage
 
 ```tsx
-import { Select } from 'glasswave';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from 'glasswave';
+```
 
-export default function Home() {
-  return (
-    <div>
-      <Select options={[{ label: 'Option 1', value: '1' }]} />
-    </div>
-  );
-}
+```tsx
+<Select>
+  <SelectTrigger className="w-[180px]">
+    <SelectValue placeholder="Theme" />
+  </SelectTrigger>
+  <SelectContent>
+    <SelectItem value="light">Light</SelectItem>
+    <SelectItem value="dark">Dark</SelectItem>
+    <SelectItem value="system">System</SelectItem>
+  </SelectContent>
+</Select>
 ```

@@ -1,102 +1,88 @@
 "use client";
 
-import { type ReactNode, useEffect } from "react";
+import * as Dialog from "@radix-ui/react-dialog";
+import { type ComponentPropsWithoutRef, forwardRef } from "react";
+import { cn } from "../lib/cn";
+import { glass, focusRing } from "../lib/glass";
 
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  title?: string;
-  children: ReactNode;
-  className?: string;
-}
+export const AlertDialog = Dialog.Root;
+export const AlertDialogTrigger = Dialog.Trigger;
+export const AlertDialogPortal = Dialog.Portal;
+export const AlertDialogClose = Dialog.Close;
 
-export function Modal({
-  isOpen,
-  onClose,
-  title,
-  children,
-  className = "",
-}: ModalProps) {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen]);
-
-  useEffect(() => {
-    function handleEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    }
-
-    if (isOpen) {
-      document.addEventListener("keydown", handleEscape);
-    }
-
-    return () => document.removeEventListener("keydown", handleEscape);
-  }, [isOpen, onClose]);
-
-  if (!isOpen) return null;
-
-  const modalClasses =
-    "backdrop-blur-[20px] bg-white/10 border border-white/20 relative w-full max-w-md p-6 rounded-xl animate-in fade-in-0 zoom-in-95";
-
-  return (
+export const AlertDialogContent = forwardRef<
+  HTMLDivElement,
+  ComponentPropsWithoutRef<typeof Dialog.Content>
+>(({ className, children, ...props }, ref) => (
+  <AlertDialogPortal>
+    <Dialog.Overlay className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" />
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop */}
-      <button
-        type="button"
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm cursor-pointer"
-        aria-label="Close modal"
-        tabIndex={0}
-        onClick={onClose}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            onClose();
-          }
-        }}
-        style={{ border: "none", padding: 0, margin: 0, background: "none" }}
-      />
-
-      {/* Modal */}
-      <div className={`${modalClasses} ${className}`}>
-        {/* Header */}
-        {title && (
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-semibold text-white">{title}</h2>
-            <button
-              type="button"
-              onClick={onClose}
-              className="text-white/60 hover:text-white transition-colors"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
+      <Dialog.Content
+        ref={ref}
+        className={cn(
+          glass,
+          "relative w-full max-w-md p-6 animate-in fade-in-0 zoom-in-95",
+          className,
         )}
-
-        {/* Content */}
-        <div>{children}</div>
-      </div>
+        {...props}
+      >
+        {children}
+      </Dialog.Content>
     </div>
-  );
-}
+  </AlertDialogPortal>
+));
+AlertDialogContent.displayName = "AlertDialogContent";
+
+export const AlertDialogHeader = ({
+  className = "",
+  ...props
+}: { className?: string } & ComponentPropsWithoutRef<"div">) => (
+  <div className={cn("flex flex-col gap-2 mb-4", className)} {...props} />
+);
+
+export const AlertDialogTitle = ({
+  className = "",
+  ...props
+}: ComponentPropsWithoutRef<typeof Dialog.Title>) => (
+  <Dialog.Title
+    className={cn("text-xl font-semibold text-white", className)}
+    {...props}
+  />
+);
+
+export const AlertDialogDescription = ({
+  className = "",
+  ...props
+}: ComponentPropsWithoutRef<typeof Dialog.Description>) => (
+  <Dialog.Description className={cn("text-white/80", className)} {...props} />
+);
+
+export const AlertDialogFooter = ({
+  className = "",
+  ...props
+}: { className?: string } & ComponentPropsWithoutRef<"div">) => (
+  <div
+    className={cn("mt-6 flex items-center justify-end gap-3", className)}
+    {...props}
+  />
+);
+
+export const AlertDialogCancel = ({
+  className = "",
+  ...props
+}: ComponentPropsWithoutRef<typeof Dialog.Close>) => (
+  <Dialog.Close
+    className={cn("text-white/80 hover:text-white", focusRing, className)}
+    {...props}
+  />
+);
+
+export const AlertDialogAction = ({
+  className = "",
+  ...props
+}: ComponentPropsWithoutRef<"button">) => (
+  <button
+    className={cn("text-white hover:opacity-80", focusRing, className)}
+    {...props}
+  />
+);

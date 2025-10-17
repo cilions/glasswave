@@ -6,13 +6,14 @@ description: Displays a callout for user attention.
 ## Usage
 
 ```tsx
-import { Alert } from 'glasswave';
+import { Alert, AlertTitle, AlertDescription } from 'glasswave';
+```
 
-export default function Home() {
-  return (
-    <div>
-      <Alert>This is an alert</Alert>
-    </div>
-  );
-}
+```tsx
+<Alert variant="default | destructive">
+  <AlertTitle>Success!</AlertTitle>
+  <AlertDescription>
+    This is alert with title and description.
+  </AlertDescription>
+</Alert>
 ```

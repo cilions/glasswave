@@ -1,44 +1,56 @@
 "use client";
 
+import * as RadixSwitch from "@radix-ui/react-switch";
 import { forwardRef } from "react";
+import { cn } from "../lib/cn";
+import { glass, focusRing } from "../lib/glass";
 
 interface SwitchProps {
-  checked: boolean;
-  onChange: (checked: boolean) => void;
+  checked?: boolean;
+  defaultChecked?: boolean;
+  onChange?: (checked: boolean) => void;
   id?: string;
   className?: string;
   disabled?: boolean;
 }
 
-export const Switch = forwardRef<HTMLInputElement, SwitchProps>(
-  ({ checked, onChange, id, className = "", disabled, ...props }, ref) => {
-    const baseClasses =
-      "backdrop-blur-[20px] bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-200 cursor-pointer focus-within:ring-2 focus-within:ring-white/30 w-11 h-6 rounded-full flex items-center relative";
-    const checkedClasses = checked ? "bg-blue-500/30 border-blue-400/40" : "";
-    const disabledClasses = disabled ? "opacity-50 cursor-not-allowed" : "";
-    const thumbClasses = `w-4 h-4 bg-white rounded-full transition-transform duration-200 shadow-sm ${
-      checked ? "translate-x-6" : "translate-x-1"
-    }`;
-
+export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(
+  (
+    {
+      checked,
+      defaultChecked,
+      onChange,
+      id,
+      className = "",
+      disabled,
+      ...props
+    },
+    ref,
+  ) => {
     return (
-      <div className="relative">
-        <input
-          ref={ref}
-          type="checkbox"
-          id={id}
-          checked={checked}
-          onChange={(e) => onChange(e.target.checked)}
-          disabled={disabled}
-          className="sr-only"
-          {...props}
+      <RadixSwitch.Root
+        id={id}
+        ref={ref as any}
+        checked={checked}
+        defaultChecked={defaultChecked}
+        onCheckedChange={(v) => onChange?.(Boolean(v))}
+        disabled={disabled}
+        className={cn(
+          glass,
+          focusRing,
+          "group w-11 h-6 rounded-full relative data-[state=checked]:bg-blue-500/30 data-[state=checked]:border-blue-400/40",
+          disabled && "opacity-50 cursor-not-allowed",
+          className,
+        )}
+        {...props}
+      >
+        <RadixSwitch.Thumb
+          className={cn(
+            "block w-4 h-4 bg-white rounded-full transition-transform duration-200 shadow-sm translate-x-1",
+            "group-data-[state=checked]:translate-x-6",
+          )}
         />
-        <label
-          htmlFor={id}
-          className={`${baseClasses} ${checkedClasses} ${disabledClasses} ${className}`}
-        >
-          <div className={thumbClasses} />
-        </label>
-      </div>
+      </RadixSwitch.Root>
     );
   },
 );
