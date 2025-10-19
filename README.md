@@ -1,6 +1,6 @@
 # Glasswave
 
-A modern CSS components library for building beautiful, adaptive interfaces with smooth glass-like visuals and effortless theming.
+A component-based ui library for React with a liquid glass effect.
 
 ## Documentation
 

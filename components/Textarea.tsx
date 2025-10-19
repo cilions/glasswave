@@ -9,7 +9,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     const baseClasses = cn(
       glass,
       focusRing,
-      "w-full px-4 py-2 resize-none placeholder:text-white/60",
+      "w-full px-4 py-2 resize-none",
     );
 
     return (

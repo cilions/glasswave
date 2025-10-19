@@ -1,2 +1,3 @@
-onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
+packages:
+  - 'docs'
+  - 'templates/next'

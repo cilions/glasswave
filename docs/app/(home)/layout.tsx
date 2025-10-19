@@ -1,4 +1,3 @@
-// app/home/layout.tsx
 import { HomeLayout } from "fumadocs-ui/layouts/home";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { baseOptions } from "@/lib/layout.shared";

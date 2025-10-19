@@ -9,7 +9,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     const baseClasses = cn(
       glass,
       focusRing,
-      "w-full px-4 py-2 placeholder:text-white/70",
+      "w-full px-4 py-2",
     );
 
     return (

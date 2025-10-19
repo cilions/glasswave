@@ -38,7 +38,7 @@ export const DropdownMenuItem = forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      "w-full text-left text-white px-3 py-2 rounded-md outline-none select-none",
+      "w-full text-left px-3 py-2 rounded-md outline-none select-none",
       "data-[highlighted]:bg-white/20 data-[disabled]:opacity-50",
       className,
     )}
@@ -54,7 +54,7 @@ export const DropdownMenuLabel = forwardRef<
   <DropdownMenuPrimitive.Label
     ref={ref}
     className={cn(
-      "px-3 py-2 text-xs uppercase tracking-wide text-white/60",
+      "px-3 py-2 text-xs uppercase tracking-wide",
       className,
     )}
     {...props}

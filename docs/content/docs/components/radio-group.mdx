@@ -10,10 +10,18 @@ import { RadioGroup, RadioGroupItem } from "glasswave";
 ```
 
 ```tsx
-<RadioGroup defaultValue="a">
-  <div className="flex gap-4">
-    <RadioGroupItem value="a" />
-    <RadioGroupItem value="b" />
+<RadioGroup defaultValue="one" className="space-y-3">
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="one" id="one" />
+    <label htmlFor="one" className="text-slate-600 text-sm">
+      Option one
+    </label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="two" id="two" />
+    <label htmlFor="two" className="text-slate-600 text-sm">
+      Option two
+    </label>
   </div>
 </RadioGroup>
 ```

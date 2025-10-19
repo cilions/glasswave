@@ -23,13 +23,12 @@ export default function HomePage() {
             >
               Getting Started
             </Link>
-            <button
-              type="button"
-              disabled
-              className="px-6 py-2 rounded-full bg-white/80 border border-neutral-300 text-neutral-400 font-semibold shadow opacity-60 cursor-not-allowed transition dark:bg-neutral-900/80 dark:text-neutral-500 dark:border-neutral-700"
+            <Link
+              href="https://glasswave-demo.vercel.app/"
+              className="px-6 py-2 rounded-full bg-white/80 border border-neutral-300 text-neutral-400 font-semibold shadow transition dark:bg-neutral-900/80 dark:text-neutral-500 dark:border-neutral-700"
             >
               Open Demo
-            </button>
+            </Link>
           </div>
         </div>
       </main>

@@ -16,7 +16,7 @@ export const SelectTrigger = forwardRef<
     className={cn(
       glass,
       focusRing,
-      "text-white text-left w-full px-4 py-2 rounded-xl inline-flex items-center justify-between gap-2",
+      "text-left w-full px-4 py-2 rounded-xl inline-flex items-center justify-between gap-2",
       className,
     )}
     {...props}
@@ -51,7 +51,7 @@ export const SelectItem = forwardRef<
   <RadixSelect.Item
     ref={ref}
     className={cn(
-      "w-full text-left text-white px-3 py-2 rounded-md outline-none select-none",
+      "w-full text-left px-3 py-2 rounded-md outline-none select-none",
       "data-[highlighted]:bg-white/20 data-[state=checked]:bg-white/25",
       className,
     )}
