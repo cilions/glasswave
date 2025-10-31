@@ -1,16 +1,6 @@
 {
   "name": "glasswave",
-  "version": "0.1.7",
-  "description": "A component-based ui library for React with a liquid glass effect.",
-  "keywords": [
-    "react",
-    "components",
-    "library",
-    "ui",
-    "nextjs",
-    "tailwindcss",
-    "liquid-glass"
-  ],
+  "version": "0.1.8",
   "license": "MIT",
   "type": "module",
   "author": {
