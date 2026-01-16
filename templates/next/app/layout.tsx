@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Glasswave Demo",
-  description: "Glasswave demo page",
+  description: "Glasswave demo application built with Next.js",
 };
 
 export default function RootLayout({
