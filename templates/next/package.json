@@ -10,14 +10,14 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "glasswave": "workspace:*",
-    "lucide-react": "^0.546.0",
-    "next": "15.5.6",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "glasswave": "workspace:^",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.5",
+    "@biomejs/biome": "2.2.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
