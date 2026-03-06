@@ -25,7 +25,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && pnpm exec postcss index.css -o dist/index.css",
+    "build": "tsc && pnpm exec postcss packages/index.css -o dist/index.css",
     "dev": "tsc --watch & pnpm exec postcss index.css -o dist/index.css --watch",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format"
