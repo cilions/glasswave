@@ -1,15 +1,17 @@
 {
   "name": "glasswave",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "license": "MIT",
   "type": "module",
   "author": {
     "name": "Deniz",
     "url": "https://x.com/deniiiiz_i"
   },
-  "types": "./index.ts",
+  "types": "./packages/index.ts",
   "exports": {
-    ".": "./index.ts"
+    ".": "./packages/index.ts",
+    "./dist/index.css": "./dist/index.css",
+    "./dist/components.css": "./dist/components.css"
   },
   "publishConfig": {
     "types": "./dist/index.d.ts",
@@ -18,15 +20,17 @@
         "types": "./dist/index.d.ts",
         "import": "./dist/index.js",
         "default": "./dist/index.js"
-      }
+      },
+      "./dist/index.css": "./dist/index.css",
+      "./dist/components.css": "./dist/components.css"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc && pnpm exec postcss packages/index.css -o dist/index.css",
-    "dev": "tsc --watch & pnpm exec postcss index.css -o dist/index.css --watch",
+    "build": "tsc && pnpm exec postcss packages/index.css -o dist/index.css && pnpm exec postcss packages/components.css -o dist/components.css",
+    "dev": "tsc --watch & pnpm exec postcss packages/index.css -o dist/index.css --watch & pnpm exec postcss packages/components.css -o dist/components.css --watch",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format"
   },

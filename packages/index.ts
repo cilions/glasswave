@@ -1,5 +1,3 @@
-import './index.css';
-
 export { Alert, AlertTitle, AlertDescription } from '@/packages/src/alert'
 export {
   AlertDialog,
@@ -24,7 +22,7 @@ export {
 } from '@/packages/src/dropdown';
 export { Input } from '@/packages/src/input';
 export { RadioGroup, RadioGroupItem } from '@/packages/src/radio-group';
-export { Select } from '@/packages/src/select';
+export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/packages/src/select';
 export { Switch } from '@/packages/src/switch';
 export { Textarea } from '@/packages/src/textarea';
 export { Toast } from '@/packages/src/toast';
