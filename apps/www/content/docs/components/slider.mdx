@@ -1,6 +1,18 @@
 ---
 title: Slider
-description: Range or value slider control.
+description: An input where the user selects a value from within a given range.
 ---
 
-Slider component provides an interactive control for selecting values within a range.
+import { SliderPreview } from "@/components/previews/slider-preview";
+
+<SliderPreview />
+
+## Usage
+
+```tsx
+import { Slider } from "glasswave";
+```
+
+```tsx
+<Slider defaultValue={[33]} max={100} step={1} />
+```

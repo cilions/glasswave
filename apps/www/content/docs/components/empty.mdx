@@ -1,6 +1,32 @@
 ---
 title: Empty
-description: Placeholder for empty states.
+description: Empty-state layout with media, title, and actions.
 ---
 
-Empty component displays a friendly message when there is no content to show.
+import { EmptyPreview } from "@/components/previews/empty-preview";
+
+<EmptyPreview />
+
+## Usage
+
+```tsx
+import {
+  Empty,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+  EmptyDescription,
+  EmptyContent,
+} from "glasswave";
+```
+
+## Parts
+
+| Part | Role |
+|------|------|
+| `Empty` | Dashed bordered container |
+| `EmptyHeader` | Stacks title + description |
+| `EmptyMedia` | `variant`: `"default"` (boxed icon) or `"icon"` (plain) |
+| `EmptyTitle` | Heading |
+| `EmptyDescription` | Supporting text |
+| `EmptyContent` | CTAs row |

@@ -1,6 +1,23 @@
 ---
 title: Collapsible
-description: Toggle content visibility with expand/collapse control.
+description: An interactive component which expands/collapses a panel.
 ---
 
-Collapsible component allows users to toggle the visibility of content.
+import { CollapsiblePreview } from "@/components/previews/collapsible-preview";
+
+<CollapsiblePreview />
+
+## Usage
+
+```tsx
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "glasswave";
+```
+
+```tsx
+<Collapsible>
+  <CollapsibleTrigger>Can I use this in my project?</CollapsibleTrigger>
+  <CollapsibleContent>
+    Yes. Free to use for personal and commercial projects.
+  </CollapsibleContent>
+</Collapsible>
+```

@@ -2,57 +2,81 @@
 
 import * as RadixToast from "@radix-ui/react-toast";
 import { cn } from "@/lib/cn";
+import { glass } from "@/lib/glass";
 
 interface ToastProps {
   message: string;
-  type?: "info" | "success" | "warning" | "error";
+  type?: "default" | "error";
   duration?: number;
+  position?: "top-left" | "top-center" | "top-right" | "bottom-left" | "bottom-center" | "bottom-right";
   className?: string;
 }
 
 export function Toast({
   message,
-  type = "info",
-  duration = 10000,
+  type = "default",
+  duration = 5000,
+  position = "top-right",
   className = "",
 }: ToastProps) {
-  const colors = {
-    info: "bg-blue-500/20 border-blue-400/30",
-    success: "bg-green-500/20 border-green-400/30",
-    warning: "bg-yellow-500/20 border-yellow-400/30",
-    error: "bg-red-500/20 border-red-400/30",
+  const variantClasses = {
+    default: "",
+    error: "!text-[#FF3B30] border-[#FF3B30]/20",
+  } as const;
+
+  const positionClasses = {
+    "top-left": "top-4 left-4",
+    "top-center": "top-4 left-1/2 -translate-x-1/2",
+    "top-right": "top-4 right-4",
+    "bottom-left": "bottom-4 left-4",
+    "bottom-center": "bottom-4 left-1/2 -translate-x-1/2",
+    "bottom-right": "bottom-4 right-4",
   } as const;
 
   return (
     <RadixToast.Provider swipeDirection="right" duration={duration}>
+      <style>{`
+        @keyframes slideInDown {
+          from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes slideOutUp {
+          from {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          to {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+        }
+        [data-state='open'] {
+          animation: slideInDown 0.3s ease-out;
+        }
+        [data-state='closed'] {
+          animation: slideOutUp 0.3s ease-in;
+        }
+      `}</style>
       <RadixToast.Root
         className={cn(
-          "backdrop-blur-[20px] border fixed top-4 right-4 p-4 rounded-xl flex items-center justify-between gap-3 z-50 min-w-[300px] max-w-[500px]",
-          colors[type],
+          glass,
+          "border fixed p-4 rounded-[32px] flex items-center justify-between gap-3 z-50 min-w-[300px] max-w-[500px]",
+          variantClasses[type],
+          positionClasses[position],
           className,
         )}
       >
         <RadixToast.Description asChild>
-          <span>{message}</span>
+          <span className="text-sm">{message}</span>
         </RadixToast.Description>
-        <RadixToast.Close aria-label="Close" className="hover:opacity-70">
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </RadixToast.Close>
       </RadixToast.Root>
-      <RadixToast.Viewport className="fixed top-4 right-4 z-[60]" />
+      <RadixToast.Viewport className="fixed z-[60]" />
     </RadixToast.Provider>
   );
 }

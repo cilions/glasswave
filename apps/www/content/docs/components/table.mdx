@@ -1,6 +1,29 @@
 ---
 title: Table
-description: Flexible table for displaying tabular data.
+description: Semantic table with glass wrapper and hover rows.
 ---
 
-Table component provides a structured table for displaying and organizing data.
+import { TablePreview } from "@/components/previews/table-preview";
+
+<TablePreview />
+
+## Usage
+
+```tsx
+import {
+  Table,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableCaption,
+} from "glasswave";
+```
+
+`Table` wraps `<table>` in a rounded, bordered scroll container. Row hover uses `hover:bg-white/[0.04]`; `data-state="selected"` is supported on `TableRow`.
+
+## Accessibility
+
+Use `TableCaption` for summaries. Keep header cells as `TableHead` (`th`) with appropriate scope in complex tables.

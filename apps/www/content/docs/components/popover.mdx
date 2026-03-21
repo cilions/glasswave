@@ -1,6 +1,21 @@
 ---
 title: Popover
-description: Floating container for supplementary content.
+description: Displays rich content in a portal, triggered by a button.
 ---
 
-Popover component displays supplementary content in a floating container.
+import { PopoverPreview } from "@/components/previews/popover-preview";
+
+<PopoverPreview />
+
+## Usage
+
+```tsx
+import { Popover, PopoverTrigger, PopoverContent } from "glasswave";
+```
+
+```tsx
+<Popover>
+  <PopoverTrigger>Open</PopoverTrigger>
+  <PopoverContent>Place content for the popover here.</PopoverContent>
+</Popover>
+```

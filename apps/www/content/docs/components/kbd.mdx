@@ -1,6 +1,18 @@
 ---
 title: Kbd
-description: Visual representation of keyboard keys.
+description: Keyboard shortcut chip.
 ---
 
-Kbd component displays keyboard keys in a styled, recognizable format.
+import { KbdPreview } from "@/components/previews/kbd-preview";
+
+<KbdPreview />
+
+## Usage
+
+```tsx
+import { Kbd } from "glasswave";
+
+<Kbd>⌘</Kbd>
+```
+
+Renders a native `kbd` with subtle glass border and mono sizing. Accepts all standard `kbd` HTML attributes.

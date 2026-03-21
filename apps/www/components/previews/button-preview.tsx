@@ -7,11 +7,11 @@ export function ButtonPreview() {
   return (
     <ComponentPreview label="Button">
       <Button variant="default">Default</Button>
-      <Button variant="outline">Outline</Button>
+      <Button variant="secondary">Secondary</Button>
       <Button variant="destructive">Destructive</Button>
       <Button size="sm">Small</Button>
       <Button size="lg">Large</Button>
-      <Button size="icon" aria-label="Settings">⚙️</Button>
+      <Button variant="secondary" size="icon" aria-label="Settings">⚙️</Button>
     </ComponentPreview>
   );
 }

@@ -1,6 +1,53 @@
 ---
 title: Hover Card
-description: Display additional information on hover.
+description: For sighted users to preview content available behind a link.
 ---
 
-Hover Card component shows supplementary information when hovering over an element.
+import { HoverCardPreview } from "@/components/previews/hover-card-preview";
+
+<HoverCardPreview />
+
+## Usage
+
+```tsx
+import { HoverCard, HoverCardTrigger, HoverCardContent } from "glasswave";
+```
+
+```tsx
+<HoverCard>
+  <HoverCardTrigger>Hover</HoverCardTrigger>
+  <HoverCardContent>
+    The React Framework – created and maintained by @vercel.
+  </HoverCardContent>
+</HoverCard>
+```
+
+## Position
+
+Use the `side` prop to control where the hover card appears relative to the trigger element.
+
+```tsx
+<HoverCardContent side="top">
+  Content
+</HoverCardContent>
+```
+
+```tsx
+<HoverCardContent side="bottom">
+  Content
+</HoverCardContent>
+```
+
+```tsx
+<HoverCardContent side="left">
+  Content
+</HoverCardContent>
+```
+
+```tsx
+<HoverCardContent side="right">
+  Content
+</HoverCardContent>
+```
+
+Available values: `"top"` | `"right"` | `"bottom"` | `"left"`

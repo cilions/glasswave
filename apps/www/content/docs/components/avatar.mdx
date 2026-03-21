@@ -1,6 +1,21 @@
 ---
 title: Avatar
-description: Display user profile images or initials.
+description: An image element with a fallback for representing the user.
 ---
 
-Avatar component shows user profile pictures or initials in a rounded format.
+import { AvatarPreview } from "@/components/previews/avatar-preview";
+
+<AvatarPreview />
+
+## Usage
+
+```tsx
+import { Avatar, AvatarImage, AvatarFallback } from "glasswave";
+```
+
+```tsx
+<Avatar>
+  <AvatarImage src="https://github.com/shadcn.png" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+```

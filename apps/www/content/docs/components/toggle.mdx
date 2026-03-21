@@ -1,6 +1,20 @@
 ---
 title: Toggle
-description: Toggle button for binary state.
+description: A two-state button that can be either on or off.
 ---
 
-Toggle component provides a button that switches between two states.
+import { TogglePreview } from "@/components/previews/toggle-preview";
+
+<TogglePreview />
+
+## Usage
+
+```tsx
+import { Toggle } from "glasswave";
+```
+
+```tsx
+<Toggle aria-label="Toggle italic">
+  <FontItalicIcon className="h-4 w-4" />
+</Toggle>
+```

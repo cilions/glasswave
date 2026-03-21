@@ -22,7 +22,7 @@ export const DropdownMenuContent = forwardRef<
       sideOffset={sideOffset}
       className={cn(
         glass,
-        "min-w-[200px] shadow-lg rounded-xl overflow-hidden p-1 z-50",
+        "z-50 min-w-[200px] overflow-hidden p-0 py-1.5 shadow-lg",
         className,
       )}
       {...props}
@@ -38,7 +38,7 @@ export const DropdownMenuItem = forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      "w-full text-left px-3 py-2 rounded-md outline-none select-none",
+      "w-full select-none rounded-none px-3 py-2 text-left outline-none",
       "data-[highlighted]:bg-white/20 data-[disabled]:opacity-50",
       className,
     )}
@@ -54,7 +54,7 @@ export const DropdownMenuLabel = forwardRef<
   <DropdownMenuPrimitive.Label
     ref={ref}
     className={cn(
-      "px-3 py-2 text-xs uppercase tracking-wide",
+      "px-3 py-1.5 text-xs uppercase tracking-wide text-current/70",
       className,
     )}
     {...props}
@@ -68,7 +68,7 @@ export const DropdownMenuSeparator = forwardRef<
 >(({ className, ...props }, ref) => (
   <DropdownMenuPrimitive.Separator
     ref={ref}
-    className={cn("my-1 h-px bg-white/20", className)}
+    className={cn("my-1 h-px w-full bg-white/20", className)}
     {...props}
   />
 ));

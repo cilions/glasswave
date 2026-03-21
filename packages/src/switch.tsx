@@ -38,7 +38,7 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(
         className={cn(
           glass,
           focusRing,
-          "group w-11 h-6 rounded-full relative data-[state=checked]:bg-blue-500/30 data-[state=checked]:border-blue-400/40",
+          "group w-11 h-6 rounded-full relative data-[state=checked]:bg-[#007AFF] data-[state=checked]:border-[#007AFF]",
           disabled && "opacity-50 cursor-not-allowed",
           className,
         )}

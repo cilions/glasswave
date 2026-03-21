@@ -1,6 +1,36 @@
 ---
 title: Sheet
-description: Bottom or side sheet for content.
+description: Slide-over panel using Radix Dialog with side variants.
 ---
 
-Sheet component displays content in a slide-up or slide-in sheet format.
+import { SheetPreview } from "@/components/previews/sheet-preview";
+
+<SheetPreview />
+
+## Usage
+
+```tsx
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
+} from "glasswave";
+
+<Sheet>
+  <SheetTrigger asChild>
+    <Button>Open</Button>
+  </SheetTrigger>
+  <SheetContent side="right">…</SheetContent>
+</Sheet>
+```
+
+## `SheetContent`
+
+| Prop | Type | Default |
+|------|------|---------|
+| `side` | `"top"` \| `"right"` \| `"bottom"` \| `"left"` | `"right"` |
+
+Includes overlay, close button, and glass surface. `SheetPortal`, `SheetOverlay`, `SheetClose`, `SheetFooter` are exported for custom composition.

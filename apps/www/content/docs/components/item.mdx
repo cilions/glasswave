@@ -1,6 +1,31 @@
 ---
 title: Item
-description: List item component for displaying data.
+description: List row with optional glass variant and media slot.
 ---
 
-Item component represents a single item within a list or collection.
+import { ItemPreview } from "@/components/previews/item-preview";
+
+<ItemPreview />
+
+## Usage
+
+```tsx
+import {
+  Item,
+  ItemMedia,
+  ItemContent,
+  ItemTitle,
+  ItemDescription,
+  ItemActions,
+} from "glasswave";
+```
+
+## Props
+
+| Prop | Element | Notes |
+|------|---------|--------|
+| `asChild` | `Item` | Merge styles onto child via `Slot` |
+| `variant` | `Item` | `"default"` \| `"glass"` |
+| `variant` | `ItemMedia` | `"icon"` \| `"image"` |
+
+`ItemActions` is a shrink-0 container for trailing buttons.

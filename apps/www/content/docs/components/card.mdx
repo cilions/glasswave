@@ -1,6 +1,29 @@
 ---
 title: Card
-description: Container for grouping related content.
+description: Container for displaying structured information.
 ---
 
-Card component is a container that groups related content and actions together.
+import { CardPreview } from "@/components/previews/card-preview";
+
+<CardPreview />
+
+## Usage
+
+```tsx
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "glasswave";
+```
+
+```tsx
+<Card>
+  <CardHeader>
+    <CardTitle>Title</CardTitle>
+    <CardDescription>Description</CardDescription>
+  </CardHeader>
+  <CardContent>
+    Content goes here
+  </CardContent>
+  <CardFooter>
+    Footer actions
+  </CardFooter>
+</Card>
+```

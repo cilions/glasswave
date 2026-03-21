@@ -15,7 +15,7 @@ export function Alert({
 }: AlertProps) {
   const variantClasses = {
     default: "",
-    destructive: "text-red-100 bg-red-500/20 border-red-400/40",
+    destructive: "!text-[#FF3B30] border-[#FF3B30]/20",
   } as const;
 
   return (
@@ -23,7 +23,7 @@ export function Alert({
       role="alert"
       className={cn(
         glass,
-        "border p-4 flex items-start gap-3",
+        "border p-4 flex flex-col gap-1",
         variantClasses[variant],
         className,
       )}

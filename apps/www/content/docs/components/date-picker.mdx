@@ -1,6 +1,34 @@
 ---
 title: Date Picker
-description: Calendar-based date selection input.
+description: Popover trigger + single-date Calendar.
 ---
 
-Date Picker component provides an interactive calendar interface for selecting dates.
+import { DatePickerPreview } from "@/components/previews/date-picker-preview";
+
+<DatePickerPreview />
+
+## Usage
+
+```tsx
+import { DatePicker } from "glasswave";
+
+<DatePicker
+  date={date}
+  onDateChange={setDate}
+  placeholder="Pick a date"
+  formatPattern="PPP"
+/>
+```
+
+## Props
+
+| Prop | Type | Description |
+|------|------|-------------|
+| `date` | `Date \| undefined` | Controlled value |
+| `onDateChange` | `(d?: Date) => void` | Selection callback |
+| `placeholder` | `string` | Empty trigger label |
+| `formatPattern` | `string` | `date-fns` format (default `PPP`) |
+| `align` | Popover align | Passed to `PopoverContent` |
+| `disabled` | `boolean` | Disables trigger |
+
+Depends on `date-fns` for display formatting.

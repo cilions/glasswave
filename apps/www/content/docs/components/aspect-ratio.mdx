@@ -1,6 +1,26 @@
 ---
 title: Aspect Ratio
-description: Maintains a consistent aspect ratio for containers.
+description: Displays content within a desired ratio.
 ---
 
-Aspect Ratio component ensures elements maintain a specific width-to-height ratio.
+import { AspectRatioPreview } from "@/components/previews/aspect-ratio-preview";
+
+<AspectRatioPreview />
+
+## Usage
+
+```tsx
+import { AspectRatio } from "glasswave";
+import Image from "next/image";
+```
+
+```tsx
+<AspectRatio ratio={16 / 9}>
+  <Image
+    src="/image.jpg"
+    alt="Image"
+    fill
+    className="object-cover"
+  />
+</AspectRatio>
+```

@@ -18,3 +18,33 @@ import { Tooltip } from 'glasswave';
   <span>Hover me</span>
 </Tooltip>
 ```
+
+## Position
+
+Use the `side` prop to control where the tooltip appears relative to the trigger element.
+
+```tsx
+<Tooltip content="Tooltip text" side="top">
+  <span>Hover me</span>
+</Tooltip>
+```
+
+```tsx
+<Tooltip content="Tooltip text" side="bottom">
+  <span>Hover me</span>
+</Tooltip>
+```
+
+```tsx
+<Tooltip content="Tooltip text" side="left">
+  <span>Hover me</span>
+</Tooltip>
+```
+
+```tsx
+<Tooltip content="Tooltip text" side="right">
+  <span>Hover me</span>
+</Tooltip>
+```
+
+Available values: `"top"` | `"right"` | `"bottom"` | `"left"`

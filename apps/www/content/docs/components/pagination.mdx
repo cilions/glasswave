@@ -1,6 +1,28 @@
 ---
 title: Pagination
-description: Navigate between pages of content.
+description: Page navigation list with glass buttons.
 ---
 
-Pagination component enables users to navigate through multiple pages of content.
+import { PaginationPreview } from "@/components/previews/pagination-preview";
+
+<PaginationPreview />
+
+## Usage
+
+```tsx
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationPrevious,
+  PaginationNext,
+  PaginationEllipsis,
+} from "glasswave";
+```
+
+## Props
+
+`PaginationLink` extends `<a>` with `isActive` to highlight the current page (uses primary button variant).
+
+`PaginationPrevious` / `PaginationNext` render full anchor elements inside `PaginationItem`; pass `href` or `onClick` as needed.

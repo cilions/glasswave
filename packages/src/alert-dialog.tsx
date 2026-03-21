@@ -3,7 +3,8 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { type ComponentPropsWithoutRef, forwardRef } from "react";
 import { cn } from "@/lib/cn";
-import { glass, focusRing } from "@/lib/glass";
+import { glass } from "@/lib/glass";
+import { buttonVariants } from "./button";
 
 export const AlertDialog = Dialog.Root;
 export const AlertDialogTrigger = Dialog.Trigger;
@@ -21,7 +22,8 @@ export const AlertDialogContent = forwardRef<
         ref={ref}
         className={cn(
           glass,
-          "relative w-full max-w-md p-6 animate-in fade-in-0 zoom-in-95",
+          "bg-white dark:bg-zinc-950",
+          "relative w-full max-w-[350px] animate-in fade-in-0 zoom-in-95 overflow-hidden",
           className,
         )}
         {...props}
@@ -37,7 +39,7 @@ export const AlertDialogHeader = ({
   className = "",
   ...props
 }: { className?: string } & ComponentPropsWithoutRef<"div">) => (
-  <div className={cn("flex flex-col gap-2 mb-4", className)} {...props} />
+  <div className={cn("flex flex-col gap-1.5 p-6", className)} {...props} />
 );
 
 export const AlertDialogTitle = ({
@@ -45,7 +47,7 @@ export const AlertDialogTitle = ({
   ...props
 }: ComponentPropsWithoutRef<typeof Dialog.Title>) => (
   <Dialog.Title
-    className={cn("text-xl font-semibold text-white", className)}
+    className={cn("!m-0 text-xl font-semibold", className)}
     {...props}
   />
 );
@@ -54,7 +56,7 @@ export const AlertDialogDescription = ({
   className = "",
   ...props
 }: ComponentPropsWithoutRef<typeof Dialog.Description>) => (
-  <Dialog.Description className={cn("text-white/80", className)} {...props} />
+  <Dialog.Description className={cn("!m-0 text-sm opacity-70", className)} {...props} />
 );
 
 export const AlertDialogFooter = ({
@@ -62,7 +64,7 @@ export const AlertDialogFooter = ({
   ...props
 }: { className?: string } & ComponentPropsWithoutRef<"div">) => (
   <div
-    className={cn("mt-6 flex items-center justify-end gap-3", className)}
+    className={cn("flex items-center p-6 pt-0 gap-4", className)}
     {...props}
   />
 );
@@ -72,7 +74,7 @@ export const AlertDialogCancel = ({
   ...props
 }: ComponentPropsWithoutRef<typeof Dialog.Close>) => (
   <Dialog.Close
-    className={cn("text-white/80 hover:text-white", focusRing, className)}
+    className={cn(buttonVariants({ variant: "secondary" }), "flex-1 cursor-pointer", className)}
     {...props}
   />
 );
@@ -82,7 +84,7 @@ export const AlertDialogAction = ({
   ...props
 }: ComponentPropsWithoutRef<"button">) => (
   <button
-    className={cn("text-white hover:opacity-80", focusRing, className)}
+    className={cn(buttonVariants({ variant: "default" }), "flex-1 cursor-pointer", className)}
     {...props}
   />
 );

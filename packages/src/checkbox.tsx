@@ -38,7 +38,7 @@ export const Checkbox = forwardRef<HTMLButtonElement, CheckboxProps>(
         className={cn(
           glass,
           focusRing,
-          "w-5 h-5 rounded-md flex items-center justify-center data-[state=checked]:bg-blue-500/30 data-[state=checked]:border-blue-400/40",
+          "w-5 h-5 rounded-full flex items-center justify-center data-[state=checked]:bg-[#007AFF] data-[state=checked]:border-[#007AFF]",
           disabled && "opacity-50 cursor-not-allowed",
           className,
         )}

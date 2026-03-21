@@ -1,6 +1,35 @@
 ---
 title: Input Group
-description: Group input fields with additional elements.
+description: Text input with start/end addons (URL prefix, currency, etc.).
 ---
 
-Input Group component organizes input fields with add-ons like prefixes or buttons.
+import { InputGroupPreview } from "@/components/previews/input-group-preview";
+
+<InputGroupPreview />
+
+## Usage
+
+```tsx
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+  InputGroupText,
+} from "glasswave";
+
+<InputGroup>
+  <InputGroupAddon align="inline-start">
+    <InputGroupText>https://</InputGroupText>
+  </InputGroupAddon>
+  <InputGroupInput className="ps-[4.5rem]" />
+</InputGroup>
+```
+
+## Parts
+
+| Part | Notes |
+|------|--------|
+| `InputGroup` | Relative flex wrapper |
+| `InputGroupAddon` | `align`: `"inline-start"` \| `"inline-end"`; `pointer-events-none` for text addons |
+| `InputGroupInput` | Glass input; pad inline start/end to clear addons |
+| `InputGroupText` | Muted label inside addon |

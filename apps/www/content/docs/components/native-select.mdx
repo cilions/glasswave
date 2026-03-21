@@ -1,6 +1,25 @@
 ---
 title: Native Select
-description: Native HTML select element wrapper.
+description: Styled native `<select>` with glass appearance.
 ---
 
-Native Select component wraps the native HTML select element with consistent styling.
+import { NativeSelectPreview } from "@/components/previews/native-select-preview";
+
+<NativeSelectPreview />
+
+## Usage
+
+```tsx
+import { NativeSelect } from "glasswave";
+
+<NativeSelect defaultValue="a">
+  <option value="a">A</option>
+  <option value="b">B</option>
+</NativeSelect>
+```
+
+Extends native `select` props (`multiple`, `required`, `disabled`, `onChange`, etc.). Chevron is an embedded SVG (light/dark).
+
+## Accessibility
+
+Prefer Radix `Select` when you need full keyboard and portal control; use `NativeSelect` for minimal bundle size or mobile-native pickers.

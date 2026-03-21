@@ -1,6 +1,20 @@
 ---
 title: Scroll Area
-description: Customizable scroll area component.
+description: Augments native scroll functionality for custom, cross-browser styling.
 ---
 
-Scroll Area component provides a customizable scroll container with styled scrollbars.
+import { ScrollAreaPreview } from "@/components/previews/scroll-area-preview";
+
+<ScrollAreaPreview />
+
+## Usage
+
+```tsx
+import { ScrollArea } from "glasswave";
+```
+
+```tsx
+<ScrollArea className="h-[200px] w-[350px] rounded-md border p-4">
+  Jokester began sneaking into the castle in the middle of the night...
+</ScrollArea>
+```

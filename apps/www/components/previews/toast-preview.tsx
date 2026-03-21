@@ -4,29 +4,38 @@ import { Toast, Button } from "glasswave";
 import { useState } from "react";
 import { ComponentPreview } from "@/components/component-preview";
 
+type ToastType = "default" | "error";
+
 export function ToastPreview() {
   const [show, setShow] = useState(false);
-  const [type, setType] = useState<"info" | "success" | "warning" | "error">("success");
+  const [type, setType] = useState<ToastType>("default");
 
-  const showToast = (t: "info" | "success" | "warning" | "error") => {
+  const showToast = (t: ToastType) => {
     setType(t);
     setShow(true);
-    setTimeout(() => setShow(false), 3000);
+    setTimeout(() => setShow(false), 5000);
   };
 
   return (
     <ComponentPreview label="Toast">
-      <Button onClick={() => showToast("success")}>Success</Button>
-      <Button onClick={() => showToast("error")} variant="destructive">Error</Button>
-      <Button onClick={() => showToast("info")} variant="outline">Info</Button>
+      <div className="flex gap-2">
+        <Button onClick={() => showToast("default")} variant="secondary">
+          Default
+        </Button>
+        <Button onClick={() => showToast("error")} variant="destructive">
+          Error
+        </Button>
+      </div>
+
       {show && (
         <Toast
           message={
-            type === "success" ? "Changes saved successfully!" :
-            type === "error" ? "Something went wrong!" :
-            "Here is some information."
+            type === "default"
+              ? "Changes saved successfully!"
+              : "Something went wrong!"
           }
           type={type}
+          position="top-right"
         />
       )}
     </ComponentPreview>

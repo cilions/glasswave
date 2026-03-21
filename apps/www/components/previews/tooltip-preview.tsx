@@ -6,15 +6,20 @@ import { ComponentPreview } from "@/components/component-preview";
 export function TooltipPreview() {
   return (
     <ComponentPreview label="Tooltip">
-      <Tooltip content="This is a helpful tooltip">
-        <Button>Hover me</Button>
-      </Tooltip>
-      <Tooltip content="Delete this item">
-        <Button variant="destructive" size="icon" aria-label="Delete">🗑️</Button>
-      </Tooltip>
-      <Tooltip content="Open settings">
-        <Button variant="outline" size="icon" aria-label="Settings">⚙️</Button>
-      </Tooltip>
+      <div className="flex gap-4 items-center">
+        <Tooltip content="Tooltip on Top" side="top">
+          <Button variant="secondary">Top</Button>
+        </Tooltip>
+        <Tooltip content="Tooltip on Bottom" side="bottom">
+          <Button variant="secondary">Bottom</Button>
+        </Tooltip>
+        <Tooltip content="Tooltip on Left" side="left">
+          <Button variant="secondary">Left</Button>
+        </Tooltip>
+        <Tooltip content="Tooltip on Right" side="right">
+          <Button variant="secondary">Right</Button>
+        </Tooltip>
+      </div>
     </ComponentPreview>
   );
 }
