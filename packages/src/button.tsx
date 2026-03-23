@@ -1,4 +1,5 @@
 import { type ButtonHTMLAttributes, forwardRef } from "react";
+import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/cn";
 import { focusRing, glass, glassInteractive } from "@/lib/glass";
@@ -8,7 +9,7 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-[#007AFF] hover:bg-[#007AFF]/90 text-white shadow-sm",
+        default: "bg-[#007AFF] hover:bg-[#007AFF]/90 text-white shadow-sm border-0",
         secondary: "",
         destructive: "!text-[#FF3B30]",
       },
@@ -28,18 +29,21 @@ export const buttonVariants = cva(
 
 interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {}
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, children, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, children, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
     return (
-      <button
+      <Comp
         ref={ref}
         className={cn(buttonVariants({ variant, size }), className)}
         {...props}
       >
         {children}
-      </button>
+      </Comp>
     );
   },
 );

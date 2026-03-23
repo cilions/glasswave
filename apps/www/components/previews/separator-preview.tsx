@@ -8,7 +8,7 @@ export function SeparatorPreview() {
     <ComponentPreview label="Separator">
       <div className="text-gray-900 dark:text-white w-[300px]">
         <div className="space-y-1">
-          <h4 className="text-sm font-medium leading-none">Glasswave Primitives</h4>
+          <h4 className="text-sm font-medium leading-none">Glasswave</h4>
           <p className="text-sm text-gray-600 dark:text-white/60">An open-source UI component library.</p>
         </div>
         <Separator className="my-4" />

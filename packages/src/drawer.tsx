@@ -3,7 +3,6 @@
 import { Drawer as DrawerPrimitive } from "vaul";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
 
 export const Drawer = DrawerPrimitive.Root;
 export const DrawerTrigger = DrawerPrimitive.Trigger;
@@ -32,13 +31,13 @@ export const DrawerContent = forwardRef<
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(
-        glass,
-        "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto max-h-[96vh] flex-col rounded-t-[32px] border-t border-white/10 p-6 pt-2",
+        "bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50",
+        "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto max-h-[96vh] flex-col rounded-t-[32px] border-t border-zinc-200 dark:border-white/10 p-6 pt-2",
         className,
       )}
       {...props}
     >
-      <DrawerPrimitive.Handle className="mx-auto mb-4 h-1.5 w-12 shrink-0 rounded-full bg-white/25" />
+      <DrawerPrimitive.Handle className="mx-auto mb-4 h-1.5 w-12 shrink-0 rounded-full bg-zinc-300 dark:bg-white/25" />
       {children}
     </DrawerPrimitive.Content>
   </DrawerPortal>
@@ -71,6 +70,10 @@ export const DrawerDescription = forwardRef<
   HTMLParagraphElement,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Description>
 >(({ className, ...props }, ref) => (
-  <DrawerPrimitive.Description ref={ref} className={cn("text-sm text-current/70", className)} {...props} />
+  <DrawerPrimitive.Description
+    ref={ref}
+    className={cn("text-sm text-current/70", className)}
+    {...props}
+  />
 ));
 DrawerDescription.displayName = DrawerPrimitive.Description.displayName;

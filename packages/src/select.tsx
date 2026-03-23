@@ -17,7 +17,7 @@ export const SelectTrigger = forwardRef<
     className={cn(
       glass,
       focusRing,
-      "group text-left w-full px-4 py-2 rounded-xl inline-flex items-center justify-between gap-2",
+      "group text-left w-full px-4 py-2 rounded-full inline-flex items-center justify-between gap-2",
       className,
     )}
     {...props}
@@ -42,7 +42,7 @@ const SelectScrollUpButton = forwardRef<
   <RadixSelect.ScrollUpButton
     ref={ref}
     className={cn(
-      "flex h-7 w-full shrink-0 cursor-default items-center justify-center rounded-none border-b border-white/10 bg-white/[0.04] text-current/70",
+      "flex h-7 w-full shrink-0 cursor-default items-center justify-center border-b border-white/10 bg-white/[0.04] text-current/70",
       "[&[data-state=hidden]]:hidden",
       className,
     )}
@@ -60,7 +60,7 @@ const SelectScrollDownButton = forwardRef<
   <RadixSelect.ScrollDownButton
     ref={ref}
     className={cn(
-      "flex h-7 w-full shrink-0 cursor-default items-center justify-center rounded-none border-t border-white/10 bg-white/[0.04] text-current/70",
+      "flex h-7 w-full shrink-0 cursor-default items-center justify-center border-t border-white/10 bg-white/[0.04] text-current/70",
       "[&[data-state=hidden]]:hidden",
       className,
     )}
@@ -94,7 +94,8 @@ export const SelectContent = forwardRef<
         collisionPadding={collisionPadding}
         className={cn(
           glass,
-          "z-50 max-h-[min(320px,var(--radix-select-content-available-height))] overflow-hidden shadow-lg",
+          "z-50 max-h-[min(320px,var(--radix-select-content-available-height))] overflow-hidden shadow-lg rounded-3xl",
+          // ^^^^ rounded-3xl вместо rounded-full — форма сохраняется, но items не обрезаются
           position === "popper" &&
             "min-w-[var(--radix-select-trigger-width)] will-change-[transform,opacity]",
           className,
@@ -104,7 +105,7 @@ export const SelectContent = forwardRef<
         <SelectScrollUpButton />
         <RadixSelect.Viewport
           className={cn(
-            "p-0 py-1.5",
+            "py-2 px-2", // ← px-2 добавлен, отступы от краёв
             position === "popper" && "w-full",
           )}
         >
@@ -124,7 +125,8 @@ export const SelectItem = forwardRef<
   <RadixSelect.Item
     ref={ref}
     className={cn(
-      "relative flex w-full cursor-default select-none items-center rounded-none py-2 pl-3 pr-9 text-left text-sm outline-none",
+      "relative flex w-full cursor-default select-none items-center rounded-xl py-2 pl-3 pr-9 text-left text-sm outline-none",
+      // ^^^^ rounded-xl — items аккуратно вписываются внутрь rounded-3xl контейнера
       "data-[disabled]:pointer-events-none data-[disabled]:opacity-40",
       "data-[highlighted]:bg-white/15 data-[state=checked]:bg-white/20",
       className,

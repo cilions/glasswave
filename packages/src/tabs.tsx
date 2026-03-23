@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
-
 import { cn } from "@/lib/cn"
 import { focusRing } from "@/lib/glass"
 
@@ -15,7 +14,7 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      "inline-flex h-10 items-center justify-center rounded-full bg-gray-100 dark:bg-white/10 p-1 text-gray-600 dark:text-white/60",
+      "inline-flex h-10 items-center justify-center rounded-full bg-zinc-200 dark:bg-white/10 p-1 text-zinc-500 dark:text-white/60",
       className
     )}
     {...props}
@@ -30,7 +29,10 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-gray-200 dark:data-[state=active]:bg-white/20 data-[state=active]:text-gray-900 dark:data-[state=active]:text-white data-[state=active]:shadow",
+      "inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium transition-all",
+      "disabled:pointer-events-none disabled:opacity-50",
+      "data-[state=active]:bg-white data-[state=active]:text-zinc-900 data-[state=active]:shadow-sm",
+      "dark:data-[state=active]:bg-white/20 dark:data-[state=active]:text-white dark:data-[state=active]:shadow",
       focusRing,
       className
     )}
@@ -45,11 +47,7 @@ const TabsContent = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
     ref={ref}
-    className={cn(
-      "mt-2 ring-offset-background",
-      focusRing,
-      className
-    )}
+    className={cn("mt-2", focusRing, className)}
     {...props}
   />
 ))

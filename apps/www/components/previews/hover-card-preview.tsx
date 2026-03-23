@@ -6,13 +6,13 @@ import { ComponentPreview } from "@/components/component-preview";
 export function HoverCardPreview() {
   const cardContent = (
     <div className="space-y-2">
-      <h4 className="text-sm font-semibold">@glasswave</h4>
+      <h6 className="text-sm font-semibold">@glasswave</h6>
       <p className="text-sm opacity-70">
         A beautiful UI library for modern applications.
       </p>
-      <p className="text-xs opacity-50">
+      <h6 className="text-xs opacity-50">
         Joined December 2026
-      </p>
+      </h6>
     </div>
   );
 

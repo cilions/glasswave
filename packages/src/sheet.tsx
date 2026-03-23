@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { X } from "lucide-react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/cn";
-import { glass, focusRing } from "@/lib/glass";
+import { Button } from "@/packages/src/button";
 
 export const Sheet = SheetPrimitive.Root;
 export const SheetTrigger = SheetPrimitive.Trigger;
@@ -29,20 +29,20 @@ SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 const sheetContentVariants = cva(
   cn(
-    glass,
-    "fixed z-50 flex flex-col gap-4 border-0 p-6 shadow-lg transition ease-in-out",
+    "bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50",
+    "fixed z-50 flex flex-col gap-4 p-6 shadow-lg transition ease-in-out",
     "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500",
   ),
   {
     variants: {
       side: {
-        top: "inset-x-0 top-0 rounded-b-[32px] border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
+        top: "inset-x-0 top-0 rounded-b-[32px] border-b border-zinc-200 dark:border-white/10 data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
         bottom:
-          "inset-x-0 bottom-0 rounded-t-[32px] border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
+          "inset-x-0 bottom-0 rounded-t-[32px] border-t border-zinc-200 dark:border-white/10 data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
         left:
-          "inset-y-0 left-0 h-full w-3/4 max-w-sm rounded-r-[32px] border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-md",
+          "inset-y-0 left-0 h-full w-3/4 max-w-sm rounded-r-[32px] border-r border-zinc-200 dark:border-white/10 data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-md",
         right:
-          "inset-y-0 right-0 h-full w-3/4 max-w-sm rounded-l-[32px] border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-md",
+          "inset-y-0 right-0 h-full w-3/4 max-w-sm rounded-l-[32px] border-l border-zinc-200 dark:border-white/10 data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-md",
       },
     },
     defaultVariants: {
@@ -61,15 +61,17 @@ export const SheetContent = forwardRef<HTMLDivElement, SheetContentProps>(
       <SheetOverlay />
       <SheetPrimitive.Content ref={ref} className={cn(sheetContentVariants({ side }), className)} {...props}>
         {children}
-        <SheetPrimitive.Close
-          className={cn(
-            focusRing,
-            "absolute right-4 top-4 rounded-full p-1.5 opacity-70 transition-opacity hover:opacity-100",
-          )}
+        <Button 
+          asChild 
+          variant="secondary" 
+          size="icon"
+          className="absolute right-4 top-4"
         >
-          <X className="size-4" />
-          <span className="sr-only">Close</span>
-        </SheetPrimitive.Close>
+          <SheetPrimitive.Close>
+            <X className="size-4" />
+            <span className="sr-only">Close</span>
+          </SheetPrimitive.Close>
+        </Button>
       </SheetPrimitive.Content>
     </SheetPortal>
   ),

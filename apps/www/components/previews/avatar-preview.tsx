@@ -6,13 +6,13 @@ import { ComponentPreview } from "@/components/component-preview";
 export function AvatarPreview() {
   return (
     <ComponentPreview label="Avatar">
-      <div className="flex gap-4">
+      <div className="flex items-center gap-4">
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
+          <AvatarImage src="https://avatars.githubusercontent.com/u/66132191?v=4" alt="@deniiiiz.i" />
+          <AvatarFallback>DI</AvatarFallback>
         </Avatar>
         <Avatar>
-          <AvatarFallback>GW</AvatarFallback>
+          <AvatarFallback>DI</AvatarFallback>
         </Avatar>
       </div>
     </ComponentPreview>

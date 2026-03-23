@@ -15,7 +15,7 @@ export function Alert({
 }: AlertProps) {
   const variantClasses = {
     default: "",
-    destructive: "!text-[#FF3B30] border-[#FF3B30]/20",
+    destructive: "!text-[#FF3B30]",
   } as const;
 
   return (
