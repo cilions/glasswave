@@ -1,0 +1,31 @@
+---
+title: Typography
+description: Opinionated text styles for headings, body, and code.
+---
+
+import { TypographyPreview } from "@/components/previews/typography-preview";
+
+<TypographyPreview />
+
+## Usage
+
+```tsx
+import {
+  TypographyH1,
+  TypographyH2,
+  TypographyH3,
+  TypographyH4,
+  TypographyP,
+  TypographyLead,
+  TypographyLarge,
+  TypographySmall,
+  TypographyMuted,
+  TypographyBlockquote,
+  TypographyList,
+  TypographyInlineCode,
+} from "glasswave";
+```
+
+Each export is a thin styled wrapper around the matching HTML element (`h1`–`h4`, `p`, `small`, `ul`, `code`, etc.). Pass `className` to extend.
+
+`TypographyList` renders a `ul` with disc markers and vertical rhythm.

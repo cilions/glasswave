@@ -1,0 +1,39 @@
+---
+title: Command
+description: Command palette and searchable lists (cmdk).
+---
+
+import { CommandPreview } from "@/components/previews/command-preview";
+
+<CommandPreview />
+
+## Usage
+
+```tsx
+import {
+  Command,
+  CommandInput,
+  CommandList,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+  CommandSeparator,
+  CommandShortcut,
+} from "glasswave";
+```
+
+`Command` accepts cmdk props: `label`, `shouldFilter`, `filter`, `value`, `onValueChange`, `loop`, `vimBindings`, etc.
+
+## Parts
+
+| Part | Purpose |
+|------|---------|
+| `CommandInput` | Search field (leading search icon) |
+| `CommandList` | Scrollable results (`max-h` capped) |
+| `CommandEmpty` | Shown when nothing matches |
+| `CommandGroup` | Optional `heading` |
+| `CommandItem` | Row; `onSelect`, `value`, `keywords` |
+| `CommandSeparator` | Divider |
+| `CommandShortcut` | Right-aligned hint (e.g. ⌘K) |
+
+Use inside `PopoverContent` with `p-0` for combobox-style UIs.

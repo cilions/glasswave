@@ -1,0 +1,40 @@
+---
+title: Carousel
+description: Embla-powered horizontal slider with prev/next controls.
+---
+
+import { CarouselPreview } from "@/components/previews/carousel-preview";
+
+<CarouselPreview />
+
+## Usage
+
+```tsx
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "glasswave";
+
+<Carousel>
+  <CarouselContent>
+    <CarouselItem>…</CarouselItem>
+  </CarouselContent>
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
+```
+
+## API
+
+| Export | Description |
+|--------|-------------|
+| `Carousel` | Root; props: `opts` (Embla options), `plugins`, `orientation`, `setApi` |
+| `CarouselContent` | Viewport + track |
+| `CarouselItem` | Slide (`basis-full`) |
+| `CarouselPrevious` / `CarouselNext` | Icon buttons |
+| `useCarousel()` | `{ api, scrollPrev, scrollNext, canScrollPrev, canScrollNext }` |
+
+`setApi` receives the Embla API for imperative control (autoplay, sync, etc.).

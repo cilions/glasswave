@@ -4,7 +4,7 @@ export const glassBase =
 export const glassInteractive =
   "transition-all duration-[400ms] ease-out hover:backdrop-blur-[60px] hover:bg-gradient-to-br hover:from-white/[0.12] hover:via-white/[0.08] hover:to-white/[0.04] dark:hover:from-white/[0.22] dark:hover:via-white/[0.16] dark:hover:to-white/[0.10] hover:border-white/[0.25] dark:hover:border-white/[0.35] hover:shadow-[0_12px_48px_0_rgba(0,0,0,0.15)] dark:hover:shadow-[0_12px_48px_0_rgba(0,0,0,0.4)] hover:scale-[1.01] active:scale-[0.99] active:backdrop-blur-[50px] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100";
 
-export const rounded = "rounded-[20px]";
+export const rounded = "rounded-[32px]";
 
 export const textOnGlass = "text-gray-900/90 dark:text-white/95 font-medium";
 

@@ -1,0 +1,35 @@
+---
+title: Breadcrumb
+description: Navigation trail for the current page hierarchy.
+---
+
+import { BreadcrumbPreview } from "@/components/previews/breadcrumb-preview";
+
+<BreadcrumbPreview />
+
+## Usage
+
+```tsx
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "glasswave";
+```
+
+Compose with `Breadcrumb` as the outer `nav`, an ordered `BreadcrumbList`, and items. Use `BreadcrumbPage` for the non-link current page. `BreadcrumbLink` supports `asChild` with `Slot` to render framework links (e.g. Next.js `Link`).
+
+## Components
+
+| Export | Role |
+|--------|------|
+| `Breadcrumb` | `nav` with `aria-label="breadcrumb"` |
+| `BreadcrumbList` | `ol` list container |
+| `BreadcrumbItem` | `li` wrapper |
+| `BreadcrumbLink` | Link; `asChild` to compose |
+| `BreadcrumbPage` | Current page (not interactive) |
+| `BreadcrumbSeparator` | Visual separator (default chevron) |
+| `BreadcrumbEllipsis` | Collapsed trail affordance |

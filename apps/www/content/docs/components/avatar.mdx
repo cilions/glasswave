@@ -1,0 +1,21 @@
+---
+title: Avatar
+description: An image element with a fallback for representing the user.
+---
+
+import { AvatarPreview } from "@/components/previews/avatar-preview";
+
+<AvatarPreview />
+
+## Usage
+
+```tsx
+import { Avatar, AvatarImage, AvatarFallback } from "glasswave";
+```
+
+```tsx
+<Avatar>
+  <AvatarImage src="https://avatars.githubusercontent.com/u/66132191?v=4" />
+  <AvatarFallback>DI</AvatarFallback>
+</Avatar>
+```

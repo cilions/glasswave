@@ -1,0 +1,42 @@
+---
+title: Chart
+description: Recharts primitives with a glass container and CSS color tokens.
+---
+
+import { ChartPreview } from "@/components/previews/chart-preview";
+
+<ChartPreview />
+
+## Usage
+
+```tsx
+import {
+  ChartContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  ChartTooltip,
+} from "glasswave";
+
+const config = {
+  desktop: { label: "Desktop", color: "hsl(211 100% 50%)" },
+};
+
+<ChartContainer config={config}>
+  <BarChart data={data}>
+    <CartesianGrid vertical={false} />
+    <XAxis dataKey="name" />
+    <YAxis />
+    <ChartTooltip />
+    <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} />
+  </BarChart>
+</ChartContainer>
+```
+
+`ChartContainer` sets `--color-{key}` from `config` and wraps children in `ResponsiveContainer`.
+
+## Re-exports
+
+`Area`, `AreaChart`, `Line`, `LineChart`, `Legend`, `Cell`, `XAxis`, `YAxis`, `CartesianGrid`, `ChartTooltip` (Recharts `Tooltip`), and `ResponsiveContainer` are exported from `glasswave` for advanced layouts.

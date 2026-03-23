@@ -1,0 +1,37 @@
+---
+title: Data Table
+description: TanStack Table headless bindings with glass table chrome.
+---
+
+import { DataTablePreview } from "@/components/previews/data-table-preview";
+
+<DataTablePreview />
+
+## Usage
+
+```tsx
+import {
+  DataTable,
+  dataTableSortHeader,
+  type ColumnDef,
+} from "glasswave";
+
+const columns: ColumnDef<MyRow>[] = [
+  {
+    accessorKey: "name",
+    header: ({ column }) => dataTableSortHeader("Name", column),
+  },
+];
+
+<DataTable columns={columns} data={rows} enableSorting />
+```
+
+## Props
+
+| Prop | Type | Default |
+|------|------|---------|
+| `columns` | `ColumnDef<TData, TValue>[]` | required |
+| `data` | `TData[]` | required |
+| `enableSorting` | `boolean` | `true` |
+
+`dataTableSortHeader` renders a compact secondary `Button` with sort icons. Turn off `enableSorting` for static tables.

@@ -1,0 +1,36 @@
+---
+title: Input OTP
+description: One-time code slots using input-otp.
+---
+
+import { InputOtpPreview } from "@/components/previews/input-otp-preview";
+
+<InputOtpPreview />
+
+## Usage
+
+```tsx
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+  InputOTPSeparator,
+} from "glasswave";
+
+<InputOTP maxLength={6}>
+  <InputOTPGroup>
+    <InputOTPSlot index={0} />
+    …
+  </InputOTPGroup>
+  <InputOTPSeparator />
+  <InputOTPGroup>…</InputOTPGroup>
+</InputOTP>
+```
+
+## Props
+
+`InputOTP` forwards to the underlying `OTPInput`: `maxLength`, `value`, `onChange`, `onComplete`, `pattern`, `containerClassName`, etc.
+
+`InputOTPSlot` requires `index` (0-based) matching the slot position.
+
+Package also exports `REGEXP_ONLY_DIGITS` and related patterns from `input-otp` if you import them from `input-otp` directly in app code.

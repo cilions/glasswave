@@ -13,8 +13,11 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "outDir": "dist",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+    }
   },
-  "include": ["components/**/*", "lib/**/*", "index.ts"],
+  "include": ["packages/**/*", "lib/**/*", "packages/index.ts"],
   "exclude": ["node_modules", "dist"]
 }

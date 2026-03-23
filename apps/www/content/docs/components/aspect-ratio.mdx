@@ -1,0 +1,26 @@
+---
+title: Aspect Ratio
+description: Displays content within a desired ratio.
+---
+
+import { AspectRatioPreview } from "@/components/previews/aspect-ratio-preview";
+
+<AspectRatioPreview />
+
+## Usage
+
+```tsx
+import { AspectRatio } from "glasswave";
+import Image from "next/image";
+```
+
+```tsx
+<AspectRatio ratio={16 / 9}>
+  <Image
+    src="https://avatars.githubusercontent.com/u/66132191?v=4"
+    alt="Image"
+    fill
+    className="object-cover"
+  />
+</AspectRatio>
+```

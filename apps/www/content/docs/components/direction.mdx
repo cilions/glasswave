@@ -1,0 +1,24 @@
+---
+title: Direction
+description: Radix direction context for RTL-aware components.
+---
+
+import { DirectionPreview } from "@/components/previews/direction-preview";
+
+<DirectionPreview />
+
+## Usage
+
+```tsx
+import { DirectionProvider, useDirection } from "glasswave";
+
+<DirectionProvider dir="rtl">
+  {children}
+</DirectionProvider>
+```
+
+`useDirection(localDir?)` returns the effective `dir` (`"ltr"` \| `"rtl"`). Pair with `dir` on HTML elements for plain text/layout when Radix primitives are not involved.
+
+## Props
+
+`DirectionProvider`: `dir` (required), `children`.

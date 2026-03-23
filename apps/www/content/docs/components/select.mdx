@@ -1,0 +1,27 @@
+---
+title: Select
+description: Select dropdown for options.
+---
+
+import { SelectPreview } from "@/components/previews/select-preview";
+
+<SelectPreview />
+
+## Usage
+
+```tsx
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from 'glasswave';
+```
+
+```tsx
+<Select>
+  <SelectTrigger>
+    <SelectValue placeholder="Theme" />
+  </SelectTrigger>
+  <SelectContent>
+    <SelectItem value="light">Light</SelectItem>
+    <SelectItem value="dark">Dark</SelectItem>
+    <SelectItem value="system">System</SelectItem>
+  </SelectContent>
+</Select>
+```

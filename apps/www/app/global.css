@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+@source "../../../packages/src/**/*.tsx";
+@source "../../../lib/**/*.ts";
+@source "../../../packages/index.ts";

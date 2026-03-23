@@ -1,0 +1,29 @@
+---
+title: Button Group
+description: Group related buttons with shared edges and radius.
+---
+
+import { ButtonGroupPreview } from "@/components/previews/button-group-preview";
+
+<ButtonGroupPreview />
+
+## Usage
+
+```tsx
+import { ButtonGroup, Button } from "glasswave";
+
+<ButtonGroup>
+  <Button size="sm">One</Button>
+  <Button size="sm">Two</Button>
+</ButtonGroup>
+```
+
+## Props
+
+`ButtonGroup` extends a `div` with `role="group"`.
+
+| Prop | Type | Default |
+|------|------|---------|
+| `orientation` | `"horizontal"` \| `"vertical"` | `"horizontal"` |
+
+Vertical stacks collapse double borders between siblings.

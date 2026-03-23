@@ -1,0 +1,27 @@
+---
+title: Field
+description: "Form field primitives: label, hint, and error."
+---
+
+import { FieldPreview } from "@/components/previews/field-preview";
+
+<FieldPreview />
+
+## Usage
+
+```tsx
+import {
+  FieldGroup,
+  Field,
+  FieldLabel,
+  FieldDescription,
+  FieldError,
+  Input,
+} from "glasswave";
+```
+
+`FieldLabel` is the Radix `Label` primitive. `FieldError` sets `role="alert"` for screen readers.
+
+## Layout
+
+`FieldGroup` adds vertical spacing between multiple fields. Each `Field` is a column with gap between label, control, and helper text.

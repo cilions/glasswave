@@ -1,0 +1,31 @@
+---
+title: Context Menu
+description: Right-click (or long-press) menu with glass styling.
+---
+
+import { ContextMenuPreview } from "@/components/previews/context-menu-preview";
+
+<ContextMenuPreview />
+
+## Usage
+
+```tsx
+import {
+  ContextMenu,
+  ContextMenuTrigger,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuSeparator,
+} from "glasswave";
+```
+
+## Exports
+
+Also available: `ContextMenuCheckboxItem`, `ContextMenuRadioItem`, `ContextMenuRadioGroup`, `ContextMenuLabel`, `ContextMenuShortcut`, `ContextMenuSub`, `ContextMenuSubTrigger`, `ContextMenuSubContent`, `ContextMenuGroup`, `ContextMenuPortal`.
+
+Items use full-width square highlights (no pill radius) to match iOS-style menus.
+
+| Item prop | Notes |
+|-----------|--------|
+| `inset` | Extra left padding for checkbox/radio rows |
+| `disabled` | From Radix |

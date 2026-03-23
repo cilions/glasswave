@@ -1,0 +1,27 @@
+---
+title: Drawer
+description: Bottom sheet built on Vaul (mobile-friendly).
+---
+
+import { DrawerPreview } from "@/components/previews/drawer-preview";
+
+<DrawerPreview />
+
+## Usage
+
+```tsx
+import {
+  Drawer,
+  DrawerTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerDescription,
+} from "glasswave";
+```
+
+## Exports
+
+`DrawerPortal`, `DrawerOverlay`, `DrawerClose`, `DrawerHandle`, `DrawerFooter` are also exported. `DrawerContent` includes a drag handle and glass panel styling.
+
+Vaul `Root` props apply: `open`, `onOpenChange`, `direction`, `dismissible`, `modal`, `snapPoints`, etc. See [Vaul docs](https://github.com/emilkowalski/vaul).

@@ -1,0 +1,23 @@
+---
+title: Collapsible
+description: An interactive component which expands/collapses a panel.
+---
+
+import { CollapsiblePreview } from "@/components/previews/collapsible-preview";
+
+<CollapsiblePreview />
+
+## Usage
+
+```tsx
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "glasswave";
+```
+
+```tsx
+<Collapsible>
+  <CollapsibleTrigger>Can I use this in my project?</CollapsibleTrigger>
+  <CollapsibleContent>
+    Yes. Free to use for personal and commercial projects.
+  </CollapsibleContent>
+</Collapsible>
+```

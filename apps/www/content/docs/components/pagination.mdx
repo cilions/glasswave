@@ -1,0 +1,47 @@
+---
+title: Pagination
+description: Page navigation list with glass buttons.
+---
+
+import { PaginationPreview } from "@/components/previews/pagination-preview";
+
+<PaginationPreview />
+
+## Usage
+
+```tsx
+<Pagination>
+  <PaginationContent>
+    <PaginationItem>
+      <PaginationPrevious href="#" onClick={(e) => e.preventDefault()} />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#" onClick={(e) => e.preventDefault()}>
+        1
+      </PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#" isActive onClick={(e) => e.preventDefault()}>
+        2
+      </PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#" onClick={(e) => e.preventDefault()}>
+        3
+      </PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationEllipsis />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationNext href="#" onClick={(e) => e.preventDefault()} />
+    </PaginationItem>
+  </PaginationContent>
+</Pagination>
+```
+
+## Props
+
+`PaginationLink` extends `<a>` with `isActive` to highlight the current page (uses primary button variant).
+
+`PaginationPrevious` / `PaginationNext` render full anchor elements inside `PaginationItem`; pass `href` or `onClick` as needed.

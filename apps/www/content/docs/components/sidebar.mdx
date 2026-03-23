@@ -1,0 +1,33 @@
+---
+title: Sidebar
+description: Collapsible glass sidebar shell with context state.
+---
+
+import { SidebarPreview } from "@/components/previews/sidebar-preview";
+
+<SidebarPreview />
+
+## Usage
+
+```tsx
+import {
+  SidebarProvider,
+  Sidebar,
+  SidebarHeader,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+  SidebarTrigger,
+  useSidebar,
+} from "glasswave";
+```
+
+Wrap layout with `SidebarProvider` (`defaultOpen`). `useSidebar()` returns `{ open, setOpen, toggle }`.
+
+Collapsed width is ~4.25rem; labels inside `SidebarGroupLabel` use `sr-only` when collapsed. Compose icons + text in `SidebarMenuButton` for icon-only collapsed mode.
+
+This is a lightweight layout primitive—not the full app-router sidebar kit from shadcn v15.

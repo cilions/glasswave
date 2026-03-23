@@ -1,0 +1,39 @@
+---
+title: Dialog
+description: Accessible dialog component.
+---
+
+import { DialogPreview } from "@/components/previews/dialog-preview";
+
+<DialogPreview />
+
+## Usage
+
+```tsx
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+  DialogClose,
+} from "glasswave";
+```
+
+```tsx
+<Dialog>
+  <DialogTrigger>Open</DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>Title</DialogTitle>
+      <DialogDescription>Description</DialogDescription>
+    </DialogHeader>
+    <div>Main Content</div>
+    <DialogFooter>
+      <DialogClose>Close</DialogClose>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>
+```

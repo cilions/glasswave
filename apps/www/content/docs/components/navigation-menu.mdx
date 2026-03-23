@@ -1,0 +1,27 @@
+---
+title: Navigation Menu
+description: Site navigation with animated viewports (Radix Navigation Menu).
+---
+
+import { NavigationMenuPreview } from "@/components/previews/navigation-menu-preview";
+
+<NavigationMenuPreview />
+
+## Usage
+
+```tsx
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+  NavigationMenuViewport,
+  NavigationMenuIndicator,
+} from "glasswave";
+```
+
+Place `NavigationMenuViewport` as a sibling after `NavigationMenuList` inside `NavigationMenu` so flyouts portal into the shared viewport.
+
+`NavigationMenuLink` supports `active` for styled current route. Trigger automatically appends a chevron and rotates it when open.

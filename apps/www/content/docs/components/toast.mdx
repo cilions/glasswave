@@ -1,0 +1,43 @@
+---
+title: Toast (Sonner)
+description: Toast notification component.
+---
+
+import { ToastPreview } from "@/components/previews/toast-preview";
+
+<ToastPreview />
+
+## Usage
+
+```tsx
+import { Toast } from 'glasswave';
+```
+
+```tsx
+<Toast message="Saved successfully" type="default" />
+```
+
+## Variants
+
+```tsx
+<Toast message="Changes saved successfully!" type="default" />
+```
+
+```tsx
+<Toast message="Something went wrong!" type="error" />
+```
+
+## Position
+
+Use the `position` prop to control where the toast appears on the screen. Default duration is 5 seconds.
+
+```tsx
+<Toast message="Top left" position="top-left" />
+<Toast message="Top center" position="top-center" />
+<Toast message="Top right" position="top-right" />
+<Toast message="Bottom left" position="bottom-left" />
+<Toast message="Bottom center" position="bottom-center" />
+<Toast message="Bottom right" position="bottom-right" />
+```
+
+Available values: `"top-left"` | `"top-center"` | `"top-right"` | `"bottom-left"` | `"bottom-center"` | `"bottom-right"`
