@@ -1,15 +1,15 @@
 {
   "name": "glasswave",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "type": "module",
   "author": {
     "name": "Deniz",
     "url": "https://x.com/deniiiiz_i"
   },
-  "types": "./packages/index.ts",
+  "types": "./dist/packages/index.d.ts",
   "exports": {
-    ".": "./packages/index.ts",
+    ".": "./dist/packages/index.js",
     "./dist/index.css": "./dist/index.css",
     "./dist/components.css": "./dist/components.css"
   },

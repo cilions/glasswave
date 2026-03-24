@@ -21,7 +21,7 @@ export function Toast({
 }: ToastProps) {
   const variantClasses = {
     default: "",
-    error: "!text-[#FF3B30] border-[#FF3B30]/20",
+    error: "!text-[#FF3B30]",
   } as const;
 
   const positionClasses = {
