@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass, focusRing } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass, focusRing } from "../../lib/glass";
 
 export function InputGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (

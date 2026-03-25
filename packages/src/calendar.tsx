@@ -3,7 +3,7 @@
 import "react-day-picker/style.css";
 
 import { DayPicker, getDefaultClassNames } from "react-day-picker";
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 

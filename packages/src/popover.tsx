@@ -3,8 +3,8 @@
 import * as React from "react"
 import * as PopoverPrimitive from "@radix-ui/react-popover"
 
-import { cn } from "@/lib/cn"
-import { glass } from "@/lib/glass"
+import { cn } from "../../lib/cn"
+import { glass } from "../../lib/glass"
 
 const Popover = PopoverPrimitive.Root
 

@@ -3,14 +3,14 @@
 import * as ContextMenuPrimitive from "@radix-ui/react-context-menu";
 import { Check, ChevronRight, Circle } from "lucide-react";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 import {
   menuContentClass,
   menuItemClass,
   menuLabelClass,
   menuSeparatorClass,
-} from "@/lib/menu-classes";
+} from "../../lib/menu-classes";
 
 export const ContextMenu = ContextMenuPrimitive.Root;
 export const ContextMenuTrigger = ContextMenuPrimitive.Trigger;

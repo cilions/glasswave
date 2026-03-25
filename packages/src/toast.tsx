@@ -1,8 +1,8 @@
 "use client";
 
 import * as RadixToast from "@radix-ui/react-toast";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 interface ToastProps {
   message: string;

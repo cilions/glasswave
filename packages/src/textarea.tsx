@@ -1,6 +1,6 @@
 import { type TextareaHTMLAttributes, forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { focusRing, glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { focusRing, glass } from "../../lib/glass";
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
 

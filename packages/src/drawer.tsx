@@ -2,7 +2,7 @@
 
 import { Drawer as DrawerPrimitive } from "vaul";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 
 export const Drawer = DrawerPrimitive.Root;
 export const DrawerTrigger = DrawerPrimitive.Trigger;

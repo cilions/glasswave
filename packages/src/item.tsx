@@ -2,8 +2,8 @@
 
 import { Slot } from "@radix-ui/react-slot";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 export const Item = forwardRef<
   HTMLDivElement,

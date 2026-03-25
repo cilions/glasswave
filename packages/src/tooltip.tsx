@@ -2,8 +2,8 @@
 
 import * as RadixTooltip from "@radix-ui/react-tooltip";
 import type { ReactNode } from "react";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 interface TooltipProps {
   content: string;

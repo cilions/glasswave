@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 import { Label } from "./label";
 
 export function FieldGroup({ className, ...props }: React.ComponentProps<"div">) {

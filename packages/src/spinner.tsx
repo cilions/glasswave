@@ -1,4 +1,4 @@
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 import { forwardRef } from "react";
 import { LoaderIcon } from "lucide-react";
 

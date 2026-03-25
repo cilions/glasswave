@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
-import { cn } from "@/lib/cn"
-import { focusRing } from "@/lib/glass"
+import { cn } from "../../lib/cn"
+import { focusRing } from "../../lib/glass"
 
 const Tabs = TabsPrimitive.Root
 

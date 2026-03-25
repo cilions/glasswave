@@ -2,7 +2,7 @@
 
 import type { CSSProperties, ReactElement, ReactNode } from "react";
 import { ResponsiveContainer } from "recharts";
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 
 export type ChartConfig = Record<
   string,

@@ -3,8 +3,8 @@
 import * as React from "react"
 import * as SliderPrimitive from "@radix-ui/react-slider"
 
-import { cn } from "@/lib/cn"
-import { focusRing } from "@/lib/glass"
+import { cn } from "../../lib/cn"
+import { focusRing } from "../../lib/glass"
 
 const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,

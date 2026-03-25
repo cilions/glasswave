@@ -1,7 +1,7 @@
 "use client";
 
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 
 const buttonGroupVariants = cva(
   "inline-flex w-fit items-stretch [&>*]:focus-visible:z-10 [&>*]:rounded-none first:[&>*]:rounded-l-full last:[&>*]:rounded-r-full",
