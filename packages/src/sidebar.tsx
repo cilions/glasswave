@@ -9,8 +9,8 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 import { buttonVariants } from "./button";
 
 type SidebarContextValue = {

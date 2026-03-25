@@ -3,8 +3,8 @@
 import { OTPInput, OTPInputContext } from "input-otp";
 import { Minus } from "lucide-react";
 import { forwardRef, useContext } from "react";
-import { cn } from "@/lib/cn";
-import { focusRing, glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { focusRing, glass } from "../../lib/glass";
 
 export const InputOTP = forwardRef<HTMLInputElement, React.ComponentPropsWithoutRef<typeof OTPInput>>(
   ({ containerClassName, ...props }, ref) => (

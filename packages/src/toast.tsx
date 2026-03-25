@@ -1,8 +1,8 @@
 "use client";
 
 import * as RadixToast from "@radix-ui/react-toast";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 interface ToastProps {
   message: string;
@@ -21,7 +21,7 @@ export function Toast({
 }: ToastProps) {
   const variantClasses = {
     default: "",
-    error: "!text-[#FF3B30] border-[#FF3B30]/20",
+    error: "!text-[#FF3B30]",
   } as const;
 
   const positionClasses = {

@@ -1,25 +1,33 @@
 {
   "name": "glasswave",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "type": "module",
   "author": {
     "name": "Deniz",
     "url": "https://x.com/deniiiiz_i"
   },
-  "types": "./packages/index.ts",
+  "main": "./dist/packages/index.js",
+  "module": "./dist/packages/index.js",
+  "types": "./dist/packages/index.d.ts",
   "exports": {
-    ".": "./packages/index.ts",
+    ".": {
+      "types": "./dist/packages/index.d.ts",
+      "import": "./dist/packages/index.js",
+      "default": "./dist/packages/index.js"
+    },
     "./dist/index.css": "./dist/index.css",
     "./dist/components.css": "./dist/components.css"
   },
   "publishConfig": {
-    "types": "./dist/index.d.ts",
+    "main": "./dist/packages/index.js",
+    "module": "./dist/packages/index.js",
+    "types": "./dist/packages/index.d.ts",
     "exports": {
       ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js",
-        "default": "./dist/index.js"
+        "types": "./dist/packages/index.d.ts",
+        "import": "./dist/packages/index.js",
+        "default": "./dist/packages/index.js"
       },
       "./dist/index.css": "./dist/index.css",
       "./dist/components.css": "./dist/components.css"
@@ -31,6 +39,8 @@
   "scripts": {
     "build": "tsc && pnpm exec postcss packages/index.css -o dist/index.css && pnpm exec postcss packages/components.css -o dist/components.css",
     "dev": "tsc --watch & pnpm exec postcss packages/index.css -o dist/index.css --watch & pnpm exec postcss packages/components.css -o dist/components.css --watch",
+    "dev:v2": "pnpm --filter v2 dev",
+    "build:v2": "pnpm --filter v2 build",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format"
   },
@@ -78,12 +88,18 @@
     "tailwindcss": "^4.1.18",
     "vaul": "^1.1.2"
   },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-dom": ">=19"
+  },
   "devDependencies": {
     "@biomejs/biome": "2.3.11",
     "@tailwindcss/postcss": "^4",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "postcss-cli": "^11.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "typescript": "^5"
   }
 }

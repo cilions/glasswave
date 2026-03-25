@@ -3,8 +3,8 @@
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { ChevronDown } from "lucide-react";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 export const NavigationMenu = forwardRef<
   HTMLElement,

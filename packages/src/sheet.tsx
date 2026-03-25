@@ -4,8 +4,8 @@ import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
 import { X } from "lucide-react";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { Button } from "@/packages/src/button";
+import { cn } from "../../lib/cn";
+import { Button } from "./button";
 
 export const Sheet = SheetPrimitive.Root;
 export const SheetTrigger = SheetPrimitive.Trigger;

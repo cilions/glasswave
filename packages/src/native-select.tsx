@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { focusRing, glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { focusRing, glass } from "../../lib/glass";
 
 export interface NativeSelectProps extends React.ComponentProps<"select"> {}
 

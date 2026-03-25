@@ -1,4 +1,4 @@
-export { Alert, AlertTitle, AlertDescription } from '@/packages/src/alert'
+export { Alert, AlertTitle, AlertDescription } from "./src/alert";
 export {
   AlertDialog,
   AlertDialogTrigger,
@@ -9,9 +9,9 @@ export {
   AlertDialogFooter,
   AlertDialogCancel,
   AlertDialogAction,
-} from '@/packages/src/alert-dialog';
-export { Button, buttonVariants } from '@/packages/src/button';
-export { Checkbox } from '@/packages/src/checkbox';
+} from "./src/alert-dialog";
+export { Button, buttonVariants } from "./src/button";
+export { Checkbox } from "./src/checkbox";
 export {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -19,18 +19,18 @@ export {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-} from '@/packages/src/dropdown';
-export { Input } from '@/packages/src/input';
-export { RadioGroup, RadioGroupItem } from '@/packages/src/radio-group';
-export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/packages/src/select';
-export { Switch } from '@/packages/src/switch';
-export { Textarea } from '@/packages/src/textarea';
-export { Toast } from '@/packages/src/toast';
-export { Tooltip } from '@/packages/src/tooltip';
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/packages/src/accordion';
-export { AspectRatio } from '@/packages/src/aspect-ratio';
-export { Avatar, AvatarImage, AvatarFallback } from '@/packages/src/avatar';
-export { Badge } from '@/packages/src/badge';
+} from "./src/dropdown";
+export { Input } from "./src/input";
+export { RadioGroup, RadioGroupItem } from "./src/radio-group";
+export { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./src/select";
+export { Switch } from "./src/switch";
+export { Textarea } from "./src/textarea";
+export { Toast } from "./src/toast";
+export { Tooltip } from "./src/tooltip";
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./src/accordion";
+export { AspectRatio } from "./src/aspect-ratio";
+export { Avatar, AvatarImage, AvatarFallback } from "./src/avatar";
+export { Badge } from "./src/badge";
 export {
   Breadcrumb,
   BreadcrumbList,
@@ -39,10 +39,10 @@ export {
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
-} from '@/packages/src/breadcrumb';
-export { ButtonGroup } from '@/packages/src/button-group';
-export { Calendar, type CalendarProps } from '@/packages/src/calendar';
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from '@/packages/src/card';
+} from "./src/breadcrumb";
+export { ButtonGroup } from "./src/button-group";
+export { Calendar, type CalendarProps } from "./src/calendar";
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "./src/card";
 export {
   Carousel,
   CarouselContent,
@@ -51,7 +51,7 @@ export {
   CarouselNext,
   useCarousel,
   type CarouselApi,
-} from '@/packages/src/carousel';
+} from "./src/carousel";
 export {
   Area,
   AreaChart,
@@ -68,9 +68,9 @@ export {
   XAxis,
   YAxis,
   type ChartConfig,
-} from '@/packages/src/chart';
-export { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@/packages/src/collapsible';
-export { Combobox, type ComboboxOption, type ComboboxProps } from '@/packages/src/combobox';
+} from "./src/chart";
+export { Collapsible, CollapsibleTrigger, CollapsibleContent } from "./src/collapsible";
+export { Combobox, type ComboboxOption, type ComboboxProps } from "./src/combobox";
 export {
   Command,
   CommandInput,
@@ -80,7 +80,7 @@ export {
   CommandItem,
   CommandSeparator,
   CommandShortcut,
-} from '@/packages/src/command';
+} from "./src/command";
 export {
   ContextMenu,
   ContextMenuTrigger,
@@ -97,9 +97,9 @@ export {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuRadioGroup,
-} from '@/packages/src/context-menu';
-export { DataTable, dataTableSortHeader, type ColumnDef, type DataTableProps } from '@/packages/src/data-table';
-export { DatePicker, type DatePickerProps } from '@/packages/src/date-picker';
+} from "./src/context-menu";
+export { DataTable, dataTableSortHeader, type ColumnDef, type DataTableProps } from "./src/data-table";
+export { DatePicker, type DatePickerProps } from "./src/date-picker";
 export {
   Dialog,
   DialogTrigger,
@@ -111,8 +111,8 @@ export {
   DialogClose,
   DialogOverlay,
   DialogPortal,
-} from '@/packages/src/dialog';
-export { DirectionProvider, useDirection } from '@/packages/src/direction';
+} from "./src/dialog";
+export { DirectionProvider, useDirection } from "./src/direction";
 export {
   Drawer,
   DrawerTrigger,
@@ -125,7 +125,7 @@ export {
   DrawerFooter,
   DrawerTitle,
   DrawerDescription,
-} from '@/packages/src/drawer';
+} from "./src/drawer";
 export {
   Empty,
   EmptyHeader,
@@ -133,16 +133,16 @@ export {
   EmptyTitle,
   EmptyDescription,
   EmptyContent,
-} from '@/packages/src/empty';
-export { Field, FieldGroup, FieldLabel, FieldDescription, FieldError } from '@/packages/src/field';
-export { HoverCard, HoverCardTrigger, HoverCardContent } from '@/packages/src/hover-card';
-export { InputGroup, InputGroupAddon, InputGroupInput, InputGroupText } from '@/packages/src/input-group';
+} from "./src/empty";
+export { Field, FieldGroup, FieldLabel, FieldDescription, FieldError } from "./src/field";
+export { HoverCard, HoverCardTrigger, HoverCardContent } from "./src/hover-card";
+export { InputGroup, InputGroupAddon, InputGroupInput, InputGroupText } from "./src/input-group";
 export {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
   InputOTPSeparator,
-} from '@/packages/src/input-otp';
+} from "./src/input-otp";
 export {
   Item,
   ItemMedia,
@@ -150,9 +150,9 @@ export {
   ItemTitle,
   ItemDescription,
   ItemActions,
-} from '@/packages/src/item';
-export { Kbd } from '@/packages/src/kbd';
-export { Label } from '@/packages/src/label';
+} from "./src/item";
+export { Kbd } from "./src/kbd";
+export { Label } from "./src/label";
 export {
   Menubar,
   MenubarMenu,
@@ -169,8 +169,8 @@ export {
   MenubarSubTrigger,
   MenubarRadioGroup,
   MenubarGroup,
-} from '@/packages/src/menubar';
-export { NativeSelect, type NativeSelectProps } from '@/packages/src/native-select';
+} from "./src/menubar";
+export { NativeSelect, type NativeSelectProps } from "./src/native-select";
 export {
   NavigationMenu,
   NavigationMenuList,
@@ -180,7 +180,7 @@ export {
   NavigationMenuLink,
   NavigationMenuIndicator,
   NavigationMenuViewport,
-} from '@/packages/src/navigation-menu';
+} from "./src/navigation-menu";
 export {
   Pagination,
   PaginationContent,
@@ -190,16 +190,16 @@ export {
   PaginationNext,
   PaginationEllipsis,
   type PaginationLinkProps,
-} from '@/packages/src/pagination';
-export { Popover, PopoverTrigger, PopoverContent } from '@/packages/src/popover';
-export { Progress } from '@/packages/src/progress';
+} from "./src/pagination";
+export { Popover, PopoverTrigger, PopoverContent } from "./src/popover";
+export { Progress } from "./src/progress";
 export {
   ResizablePanelGroup,
   ResizablePanel,
   ResizableHandle,
-} from '@/packages/src/resizable';
-export { ScrollArea, ScrollBar } from '@/packages/src/scroll-area';
-export { Separator } from '@/packages/src/separator';
+} from "./src/resizable";
+export { ScrollArea, ScrollBar } from "./src/scroll-area";
+export { Separator } from "./src/separator";
 export {
   Sheet,
   SheetTrigger,
@@ -212,7 +212,7 @@ export {
   SheetPortal,
   SheetOverlay,
   type SheetContentProps,
-} from '@/packages/src/sheet';
+} from "./src/sheet";
 export {
   SidebarProvider,
   Sidebar,
@@ -226,10 +226,10 @@ export {
   SidebarMenuButton,
   SidebarTrigger,
   useSidebar,
-} from '@/packages/src/sidebar';
-export { Skeleton } from '@/packages/src/skeleton';
-export { Slider } from '@/packages/src/slider';
-export { Spinner } from '@/packages/src/spinner';
+} from "./src/sidebar";
+export { Skeleton } from "./src/skeleton";
+export { Slider } from "./src/slider";
+export { Spinner } from "./src/spinner";
 export {
   Table,
   TableHeader,
@@ -239,10 +239,10 @@ export {
   TableRow,
   TableCell,
   TableCaption,
-} from '@/packages/src/table';
-export { Tabs, TabsList, TabsTrigger, TabsContent } from '@/packages/src/tabs';
-export { Toggle, toggleVariants } from '@/packages/src/toggle';
-export { ToggleGroup, ToggleGroupItem } from '@/packages/src/toggle-group';
+} from "./src/table";
+export { Tabs, TabsList, TabsTrigger, TabsContent } from "./src/tabs";
+export { Toggle, toggleVariants } from "./src/toggle";
+export { ToggleGroup, ToggleGroupItem } from "./src/toggle-group";
 export {
   TypographyH1,
   TypographyH2,
@@ -256,4 +256,4 @@ export {
   TypographyBlockquote,
   TypographyList,
   TypographyInlineCode,
-} from '@/packages/src/typography';
+} from "./src/typography";

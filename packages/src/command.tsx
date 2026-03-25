@@ -3,7 +3,7 @@
 import { Command as CommandPrimitive } from "cmdk";
 import { Search } from "lucide-react";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
+import { cn } from "../../lib/cn";
 
 export const Command = forwardRef<
   HTMLDivElement,

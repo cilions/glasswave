@@ -3,14 +3,14 @@
 import * as MenubarPrimitive from "@radix-ui/react-menubar";
 import { Check, ChevronRight, Circle } from "lucide-react";
 import { forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass, glassBase, textOnGlass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass, glassBase, textOnGlass } from "../../lib/glass";
 import {
   menuContentClass,
   menuItemClass,
   menuLabelClass,
   menuSeparatorClass,
-} from "@/lib/menu-classes";
+} from "../../lib/menu-classes";
 
 export const Menubar = forwardRef<
   HTMLDivElement,

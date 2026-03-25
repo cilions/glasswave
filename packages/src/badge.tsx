@@ -1,7 +1,7 @@
 import { type HTMLAttributes, forwardRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 const badgeVariants = cva(
   `${glass} inline-flex items-center !rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:ring-offset-2`,

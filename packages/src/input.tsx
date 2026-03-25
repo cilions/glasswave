@@ -1,6 +1,6 @@
 import { type InputHTMLAttributes, forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { focusRing, glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { focusRing, glass } from "../../lib/glass";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 

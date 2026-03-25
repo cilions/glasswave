@@ -2,8 +2,8 @@
 
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { type ComponentPropsWithoutRef, forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass } from "../../lib/glass";
 
 export const Dialog = DialogPrimitive.Root;
 export const DialogTrigger = DialogPrimitive.Trigger;

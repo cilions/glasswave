@@ -2,8 +2,8 @@
 
 import * as RadixRadio from "@radix-ui/react-radio-group";
 import { type ComponentPropsWithoutRef, forwardRef } from "react";
-import { cn } from "@/lib/cn";
-import { glass, focusRing } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { glass, focusRing } from "../../lib/glass";
 
 export const RadioGroup = RadixRadio.Root;
 

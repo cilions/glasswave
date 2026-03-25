@@ -1,8 +1,8 @@
 import { type ButtonHTMLAttributes, forwardRef } from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/cn";
-import { focusRing, glass, glassInteractive } from "@/lib/glass";
+import { cn } from "../../lib/cn";
+import { focusRing, glass, glassInteractive } from "../../lib/glass";
 
 export const buttonVariants = cva(
   `${glass} ${glassInteractive} ${focusRing} font-medium rounded-full`,
