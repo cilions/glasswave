@@ -12,12 +12,11 @@
   "types": "./dist/packages/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/packages/index.d.ts",
-      "import": "./dist/packages/index.js",
-      "default": "./dist/packages/index.js"
+      "types": "./packages/index.ts",
+      "import": "./packages/index.ts",
+      "default": "./packages/index.ts"
     },
-    "./styles": "./dist/index.css",
-    "./dist/index.css": "./dist/index.css"
+    "./styles": "./packages/index.css"
   },
   "publishConfig": {
     "main": "./dist/packages/index.js",
@@ -29,8 +28,7 @@
         "import": "./dist/packages/index.js",
         "default": "./dist/packages/index.js"
       },
-      "./styles": "./dist/index.css",
-      "./dist/index.css": "./dist/index.css"
+      "./styles": "./dist/index.css"
     }
   },
   "files": [
