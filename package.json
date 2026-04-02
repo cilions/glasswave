@@ -1,6 +1,6 @@
 {
   "name": "glasswave",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -16,8 +16,8 @@
       "import": "./dist/packages/index.js",
       "default": "./dist/packages/index.js"
     },
-    "./dist/index.css": "./dist/index.css",
-    "./dist/components.css": "./dist/components.css"
+    "./styles": "./dist/index.css",
+    "./dist/index.css": "./dist/index.css"
   },
   "publishConfig": {
     "main": "./dist/packages/index.js",
@@ -29,18 +29,16 @@
         "import": "./dist/packages/index.js",
         "default": "./dist/packages/index.js"
       },
-      "./dist/index.css": "./dist/index.css",
-      "./dist/components.css": "./dist/components.css"
+      "./styles": "./dist/index.css",
+      "./dist/index.css": "./dist/index.css"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc && pnpm exec postcss packages/index.css -o dist/index.css && pnpm exec postcss packages/components.css -o dist/components.css",
-    "dev": "tsc --watch & pnpm exec postcss packages/index.css -o dist/index.css --watch & pnpm exec postcss packages/components.css -o dist/components.css --watch",
-    "dev:v2": "pnpm --filter v2 dev",
-    "build:v2": "pnpm --filter v2 build",
+    "build": "tsc && pnpm exec postcss packages/index.css -o dist/index.css && node -e \"const fs=require('fs');const f='dist/packages/index.js';fs.writeFileSync(f,'import \\\"../index.css\\\";\\n'+fs.readFileSync(f,'utf8'));\"",
+    "dev": "tsc --watch & pnpm exec postcss packages/index.css -o dist/index.css --watch",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format"
   },
