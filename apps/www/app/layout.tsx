@@ -1,20 +1,26 @@
-import { Analytics } from '@vercel/analytics/next';
-import { RootProvider } from 'fumadocs-ui/provider/next';
-import './global.css';
-import { Inter } from 'next/font/google';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin'],
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
-export default function Layout({ children }: LayoutProps<'/'>) {
+export const metadata: Metadata = {
+  title: "Glasswave UI",
+  description: "Beautiful glassmorphism UI components for React and Next.js",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen">
-        <RootProvider>
-          {children}
-          <Analytics />
-        </RootProvider>
+    <html lang="en" className={inter.variable}>
+      <body className="min-h-screen antialiased bg-slate-50 dark:bg-black text-slate-900 dark:text-white">
+        {children}
       </body>
     </html>
   );

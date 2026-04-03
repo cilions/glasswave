@@ -1,24 +1,16 @@
-import { DocsLayout } from "fumadocs-ui/layouts/docs";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { baseOptions } from "@/lib/layout.shared";
-import { source } from "@/lib/source";
+import { Sidebar } from "@/components/docs/sidebar";
 
-export default function Layout({ children }: LayoutProps<"/docs">) {
+export default function DocsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <DocsLayout
-      tree={source.pageTree}
-      {...baseOptions()}
-      links={[
-        {
-          type: "icon",
-          icon: <GitHubLogoIcon />,
-          text: "GitHub",
-          url: "https://github.com/cilions/glasswave",
-          external: true,
-        },
-      ]}
-    >
-      {children}
-    </DocsLayout>
+    <div className="flex min-h-screen">
+      <Sidebar />
+      <main className="flex-1 pl-[260px]">
+        <div className="max-w-3xl mx-auto px-8 py-12">{children}</div>
+      </main>
+    </div>
   );
 }

@@ -1,0 +1,31 @@
+---
+title: Installation
+description: How to install dependencies and structure your app.
+---
+
+## Install the package
+
+```sh
+npm install glasswave
+# or
+yarn add glasswave
+# or
+pnpm add glasswave
+# or
+bun add glasswave
+```
+
+## Import styles
+
+Glasswave includes a pre-built CSS file, you need to import it in your `globals.css` **before** `@import "tailwindcss"` so that CSS layers resolve correctly.
+
+```css title="app/globals.css"
+@import "glasswave/styles";
+@import "tailwindcss";
+```
+
+> If you don't use Tailwind v4 in your project, you can import the CSS in your layout instead:
+>
+> ```tsx title="app/layout.tsx"
+> import "glasswave/styles";
+> ```

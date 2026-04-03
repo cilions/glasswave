@@ -1,9 +1,0 @@
-/* Glasswave – components only (no Tailwind base/preflight reset)
-   Import this file when using glasswave alongside another Tailwind setup
-   (e.g. fumadocs) to avoid overriding its base styles. */
-@import 'tailwindcss/theme';
-@import 'tailwindcss/utilities';
-
-@source "../lib";
-@source "./src";
-
