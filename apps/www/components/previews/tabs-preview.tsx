@@ -1,6 +1,16 @@
 "use client";
 
-import { Tabs, TabsList, TabsTrigger, TabsContent, Card, CardHeader, CardTitle, CardDescription, CardContent } from "glasswave";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function TabsPreview() {
@@ -20,7 +30,9 @@ export function TabsPreview() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <div className="text-sm text-gray-600 dark:text-white/70">Account settings form...</div>
+              <div className="text-sm text-gray-600 dark:text-white/70">
+                Account settings form...
+              </div>
             </CardContent>
           </Card>
         </TabsContent>
@@ -33,7 +45,9 @@ export function TabsPreview() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <div className="text-sm text-gray-600 dark:text-white/70">Password modify form...</div>
+              <div className="text-sm text-gray-600 dark:text-white/70">
+                Password modify form...
+              </div>
             </CardContent>
           </Card>
         </TabsContent>

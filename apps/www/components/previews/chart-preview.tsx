@@ -27,12 +27,23 @@ export function ChartPreview() {
             desktop: { label: "Desktop", color: "hsl(211 100% 50%)" },
           }}
         >
-          <BarChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} className="stroke-white/10" />
+          <BarChart
+            data={data}
+            margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
+          >
+            <CartesianGrid
+              strokeDasharray="3 3"
+              vertical={false}
+              className="stroke-white/10"
+            />
             <XAxis dataKey="month" tickLine={false} axisLine={false} />
             <YAxis tickLine={false} axisLine={false} width={32} />
             <ChartTooltip cursor={{ fill: "rgba(255,255,255,0.06)" }} />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={[6, 6, 0, 0]} />
+            <Bar
+              dataKey="desktop"
+              fill="var(--color-desktop)"
+              radius={[6, 6, 0, 0]}
+            />
           </BarChart>
         </ChartContainer>
       </div>

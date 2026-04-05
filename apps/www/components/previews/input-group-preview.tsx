@@ -1,6 +1,11 @@
 "use client";
 
-import { InputGroup, InputGroupAddon, InputGroupInput, InputGroupText } from "glasswave";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+  InputGroupText,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function InputGroupPreview() {

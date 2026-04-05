@@ -1,6 +1,11 @@
 "use client";
 
-import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "glasswave";
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function InputOTPPreview() {

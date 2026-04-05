@@ -1,6 +1,13 @@
 "use client";
 
-import { Field, FieldDescription, FieldError, FieldGroup, FieldLabel, Input } from "glasswave";
+import {
+  Field,
+  FieldDescription,
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+  Input,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function FieldPreview() {

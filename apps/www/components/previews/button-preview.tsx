@@ -11,7 +11,9 @@ export function ButtonPreview() {
       <Button variant="destructive">Destructive</Button>
       <Button size="sm">Small</Button>
       <Button size="lg">Large</Button>
-      <Button variant="secondary" size="icon" aria-label="Settings">⚙️</Button>
+      <Button variant="secondary" size="icon" aria-label="Settings">
+        ⚙️
+      </Button>
     </ComponentPreview>
   );
 }

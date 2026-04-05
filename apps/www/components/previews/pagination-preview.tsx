@@ -25,7 +25,11 @@ export function PaginationPreview() {
             </PaginationLink>
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink href="#" isActive onClick={(e) => e.preventDefault()}>
+            <PaginationLink
+              href="#"
+              isActive
+              onClick={(e) => e.preventDefault()}
+            >
               2
             </PaginationLink>
           </PaginationItem>

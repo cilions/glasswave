@@ -10,9 +10,7 @@ export function HoverCardPreview() {
       <p className="text-sm opacity-70">
         A beautiful UI library for modern applications.
       </p>
-      <h6 className="text-xs opacity-50">
-        Joined December 2026
-      </h6>
+      <h6 className="text-xs opacity-50">Joined December 2026</h6>
     </div>
   );
 
@@ -21,7 +19,9 @@ export function HoverCardPreview() {
       <div className="flex flex-wrap gap-8 items-center justify-center">
         <HoverCard>
           <HoverCardTrigger asChild>
-            <span className="text-sm font-semibold underline cursor-pointer">Top</span>
+            <span className="text-sm font-semibold underline cursor-pointer">
+              Top
+            </span>
           </HoverCardTrigger>
           <HoverCardContent side="top" className="w-64">
             {cardContent}
@@ -30,7 +30,9 @@ export function HoverCardPreview() {
 
         <HoverCard>
           <HoverCardTrigger asChild>
-            <span className="text-sm font-semibold underline cursor-pointer">Bottom</span>
+            <span className="text-sm font-semibold underline cursor-pointer">
+              Bottom
+            </span>
           </HoverCardTrigger>
           <HoverCardContent side="bottom" className="w-64">
             {cardContent}
@@ -39,7 +41,9 @@ export function HoverCardPreview() {
 
         <HoverCard>
           <HoverCardTrigger asChild>
-            <span className="text-sm font-semibold underline cursor-pointer">Left</span>
+            <span className="text-sm font-semibold underline cursor-pointer">
+              Left
+            </span>
           </HoverCardTrigger>
           <HoverCardContent side="left" className="w-64">
             {cardContent}
@@ -48,7 +52,9 @@ export function HoverCardPreview() {
 
         <HoverCard>
           <HoverCardTrigger asChild>
-            <span className="text-sm font-semibold underline cursor-pointer">Right</span>
+            <span className="text-sm font-semibold underline cursor-pointer">
+              Right
+            </span>
           </HoverCardTrigger>
           <HoverCardContent side="right" className="w-64">
             {cardContent}

@@ -8,7 +8,11 @@ export function DatePickerPreview() {
   const [date, setDate] = useState<Date | undefined>();
   return (
     <ComponentPreview label="Date Picker">
-      <DatePicker date={date} onDateChange={setDate} placeholder="Pick a date" />
+      <DatePicker
+        date={date}
+        onDateChange={setDate}
+        placeholder="Pick a date"
+      />
     </ComponentPreview>
   );
 }

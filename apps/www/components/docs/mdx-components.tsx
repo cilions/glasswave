@@ -23,7 +23,9 @@ export function getMDXComponents(): MDXComponents {
       </h3>
     ),
     p: ({ children }: ComponentPropsWithoutRef<"p">) => (
-      <p className="text-slate-600 dark:text-white/70 leading-7 mb-4">{children}</p>
+      <p className="text-slate-600 dark:text-white/70 leading-7 mb-4">
+        {children}
+      </p>
     ),
     a: ({ href, children }: ComponentPropsWithoutRef<"a">) => (
       <Link
@@ -43,7 +45,9 @@ export function getMDXComponents(): MDXComponents {
         {children}
       </ol>
     ),
-    li: ({ children }: ComponentPropsWithoutRef<"li">) => <li className="leading-7">{children}</li>,
+    li: ({ children }: ComponentPropsWithoutRef<"li">) => (
+      <li className="leading-7">{children}</li>
+    ),
     blockquote: ({ children }: ComponentPropsWithoutRef<"blockquote">) => (
       <blockquote className="border-l-2 border-slate-300 dark:border-white/20 pl-4 text-slate-500 dark:text-white/50 italic my-4">
         {children}
@@ -58,7 +62,9 @@ export function getMDXComponents(): MDXComponents {
     code: ({ children, className }: ComponentPropsWithoutRef<"code">) => {
       // Block code (inside pre) already styled by pre
       if (className) {
-        return <code className={`${className} font-mono text-sm`}>{children}</code>;
+        return (
+          <code className={`${className} font-mono text-sm`}>{children}</code>
+        );
       }
       // Inline code
       return (
@@ -68,7 +74,9 @@ export function getMDXComponents(): MDXComponents {
       );
     },
     strong: ({ children }: ComponentPropsWithoutRef<"strong">) => (
-      <strong className="font-semibold text-slate-900 dark:text-white">{children}</strong>
+      <strong className="font-semibold text-slate-900 dark:text-white">
+        {children}
+      </strong>
     ),
   };
 }

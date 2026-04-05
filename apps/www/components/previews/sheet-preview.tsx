@@ -1,6 +1,14 @@
 "use client";
 
-import { Button, Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "glasswave";
+import {
+  Button,
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function SheetPreview() {
@@ -13,9 +21,13 @@ export function SheetPreview() {
         <SheetContent side="right">
           <SheetHeader>
             <SheetTitle>Sheet title</SheetTitle>
-            <SheetDescription>Slides in from the edge using the dialog primitive.</SheetDescription>
+            <SheetDescription>
+              Slides in from the edge using the dialog primitive.
+            </SheetDescription>
           </SheetHeader>
-          <p className="text-sm text-current/75">Add forms or navigation here.</p>
+          <p className="text-sm text-current/75">
+            Add forms or navigation here.
+          </p>
         </SheetContent>
       </Sheet>
     </ComponentPreview>

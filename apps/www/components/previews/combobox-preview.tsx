@@ -15,7 +15,12 @@ export function ComboboxPreview() {
   const [value, setValue] = useState<string | null>(null);
   return (
     <ComponentPreview label="Combobox">
-      <Combobox options={options} value={value} onValueChange={setValue} placeholder="Framework…" />
+      <Combobox
+        options={options}
+        value={value}
+        onValueChange={setValue}
+        placeholder="Framework…"
+      />
     </ComponentPreview>
   );
 }
