@@ -8,7 +8,10 @@ export function AvatarPreview() {
     <ComponentPreview label="Avatar">
       <div className="flex items-center gap-4">
         <Avatar>
-          <AvatarImage src="https://avatars.githubusercontent.com/u/66132191" alt="@deniiiiz.i" />
+          <AvatarImage
+            src="https://avatars.githubusercontent.com/u/66132191"
+            alt="@deniiiiz.i"
+          />
           <AvatarFallback>DI</AvatarFallback>
         </Avatar>
         <Avatar>

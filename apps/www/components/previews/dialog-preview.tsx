@@ -36,14 +36,22 @@ export function DialogPreview() {
             </div>
             <div className="flex flex-col gap-2">
               <Label htmlFor="username">Username</Label>
-              <Input id="username" defaultValue="@peduarte" className="w-full" />
+              <Input
+                id="username"
+                defaultValue="@peduarte"
+                className="w-full"
+              />
             </div>
           </div>
           <DialogFooter className="flex gap-4 sm:justify-between w-full">
             <DialogClose asChild>
-              <Button variant="secondary" className="flex-1">Cancel</Button>
+              <Button variant="secondary" className="flex-1">
+                Cancel
+              </Button>
             </DialogClose>
-            <Button type="submit" className="flex-1">Save changes</Button>
+            <Button type="submit" className="flex-1">
+              Save changes
+            </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>

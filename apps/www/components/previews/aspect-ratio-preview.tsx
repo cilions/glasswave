@@ -4,7 +4,6 @@ import Image from "next/image";
 import { AspectRatio } from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
-
 export function AspectRatioPreview() {
   return (
     <ComponentPreview label="Aspect Ratio">

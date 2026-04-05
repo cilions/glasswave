@@ -1,6 +1,14 @@
 "use client";
 
-import { Card, CardContent, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "glasswave";
+import {
+  Card,
+  CardContent,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function CarouselPreview() {

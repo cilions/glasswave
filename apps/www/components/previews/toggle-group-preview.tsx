@@ -2,7 +2,11 @@
 
 import { ToggleGroup, ToggleGroupItem } from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
-import { FontBoldIcon, FontItalicIcon, UnderlineIcon } from "@radix-ui/react-icons";
+import {
+  FontBoldIcon,
+  FontItalicIcon,
+  UnderlineIcon,
+} from "@radix-ui/react-icons";
 
 export function ToggleGroupPreview() {
   return (

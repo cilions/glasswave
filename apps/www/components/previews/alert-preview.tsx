@@ -13,7 +13,9 @@ export function AlertPreview() {
         </Alert>
         <Alert variant="destructive">
           <AlertTitle>Connection Failed</AlertTitle>
-          <AlertDescription>Could not connect to the server. Please try again.</AlertDescription>
+          <AlertDescription>
+            Could not connect to the server. Please try again.
+          </AlertDescription>
         </Alert>
       </div>
     </ComponentPreview>

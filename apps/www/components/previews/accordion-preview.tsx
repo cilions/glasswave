@@ -1,6 +1,11 @@
 "use client";
 
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "glasswave";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 
 export function AccordionPreview() {
@@ -16,7 +21,8 @@ export function AccordionPreview() {
         <AccordionItem value="item-2">
           <AccordionTrigger>Is it styled?</AccordionTrigger>
           <AccordionContent>
-            Yes. It comes with default styles that match the glasswave aesthetic.
+            Yes. It comes with default styles that match the glasswave
+            aesthetic.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">

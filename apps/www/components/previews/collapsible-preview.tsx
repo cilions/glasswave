@@ -1,6 +1,11 @@
 "use client";
 
-import { Collapsible, CollapsibleTrigger, CollapsibleContent, Button } from "glasswave";
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+  Button,
+} from "glasswave";
 import { ComponentPreview } from "@/components/component-preview";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
