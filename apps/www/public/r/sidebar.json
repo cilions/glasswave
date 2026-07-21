@@ -3,13 +3,8 @@
   "name": "sidebar",
   "title": "Sidebar",
   "description": "Collapsible glass sidebar shell with context state.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/button",
-    "@glasswave/glass"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@glasswave/button", "@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/sidebar.tsx",

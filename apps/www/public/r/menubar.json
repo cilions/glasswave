@@ -3,14 +3,8 @@
   "name": "menubar",
   "title": "Menubar",
   "description": "Horizontal menu bar with nested dropdowns.",
-  "dependencies": [
-    "@radix-ui/react-menubar",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass",
-    "@glasswave/menu-classes"
-  ],
+  "dependencies": ["@radix-ui/react-menubar", "lucide-react"],
+  "registryDependencies": ["@glasswave/glass", "@glasswave/menu-classes"],
   "files": [
     {
       "path": "registry/glasswave/ui/menubar.tsx",

@@ -3,13 +3,8 @@
   "name": "input-otp",
   "title": "Input Otp",
   "description": "One-time code slots using input-otp.",
-  "dependencies": [
-    "input-otp",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["input-otp", "lucide-react"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/input-otp.tsx",

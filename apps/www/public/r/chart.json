@@ -3,12 +3,8 @@
   "name": "chart",
   "title": "Chart",
   "description": "Recharts primitives with a glass container and CSS color tokens.",
-  "dependencies": [
-    "recharts"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["recharts"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/chart.tsx",

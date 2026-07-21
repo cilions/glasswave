@@ -97,7 +97,7 @@ function AppSidebar() {
               <div className="min-w-0">
                 <p className="truncate text-sm font-medium">Deniz</p>
                 <p className="truncate text-xs text-current/50">
-                  deniz@glasswave.com
+                  hello@denizisik.com
                 </p>
               </div>
             )}

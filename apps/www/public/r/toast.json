@@ -3,12 +3,8 @@
   "name": "toast",
   "title": "Toast",
   "description": "Toast notification component.",
-  "dependencies": [
-    "@radix-ui/react-toast"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-toast"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/toast.tsx",

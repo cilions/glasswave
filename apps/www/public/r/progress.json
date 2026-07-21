@@ -3,9 +3,7 @@
   "name": "progress",
   "title": "Progress",
   "description": "Displays an indicator showing the completion progress of a task.",
-  "dependencies": [
-    "@radix-ui/react-progress"
-  ],
+  "dependencies": ["@radix-ui/react-progress"],
   "registryDependencies": [],
   "files": [
     {

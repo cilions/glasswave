@@ -3,9 +3,7 @@
   "name": "button-group",
   "title": "Button Group",
   "description": "Group related buttons with shared edges and radius.",
-  "dependencies": [
-    "class-variance-authority"
-  ],
+  "dependencies": ["class-variance-authority"],
   "registryDependencies": [],
   "files": [
     {

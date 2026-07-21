@@ -18,7 +18,7 @@ const CONTENT = path.join(ROOT, "apps/www/content/components");
 const OUT = path.join(ROOT, "registry/glasswave");
 
 const REGISTRY_BASE = (
-  process.env.REGISTRY_BASE || "https://glasswave-ui.vercel.app"
+  process.env.REGISTRY_BASE || "https://glasswave.denizisik.com"
 ).replace(/\/$/, "");
 
 // Every component in packages/src becomes a registry item.

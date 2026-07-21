@@ -3,12 +3,8 @@
   "name": "radio-group",
   "title": "Radio Group",
   "description": "Radio group button for single selection.",
-  "dependencies": [
-    "@radix-ui/react-radio-group"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-radio-group"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/radio-group.tsx",

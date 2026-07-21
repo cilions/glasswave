@@ -3,12 +3,8 @@
   "name": "tooltip",
   "title": "Tooltip",
   "description": "Tooltip for hints and info.",
-  "dependencies": [
-    "@radix-ui/react-tooltip"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-tooltip"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/tooltip.tsx",

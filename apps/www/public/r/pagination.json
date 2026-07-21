@@ -3,12 +3,8 @@
   "name": "pagination",
   "title": "Pagination",
   "description": "Page navigation list with glass buttons.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/button"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@glasswave/button"],
   "files": [
     {
       "path": "registry/glasswave/ui/pagination.tsx",

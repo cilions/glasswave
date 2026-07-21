@@ -3,13 +3,8 @@
   "name": "alert-dialog",
   "title": "Alert Dialog",
   "description": "Dialog component for critical confirmations.",
-  "dependencies": [
-    "@radix-ui/react-dialog"
-  ],
-  "registryDependencies": [
-    "@glasswave/button",
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-dialog"],
+  "registryDependencies": ["@glasswave/button", "@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/alert-dialog.tsx",

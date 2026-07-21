@@ -3,13 +3,8 @@
   "name": "select",
   "title": "Select",
   "description": "Select dropdown for options.",
-  "dependencies": [
-    "@radix-ui/react-select",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-select", "lucide-react"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/select.tsx",

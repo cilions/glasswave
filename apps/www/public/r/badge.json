@@ -3,9 +3,7 @@
   "name": "badge",
   "title": "Badge",
   "description": "Small labels for categorizing or highlighting content.",
-  "dependencies": [
-    "class-variance-authority"
-  ],
+  "dependencies": ["class-variance-authority"],
   "registryDependencies": [],
   "files": [
     {

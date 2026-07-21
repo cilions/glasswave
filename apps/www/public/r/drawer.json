@@ -3,9 +3,7 @@
   "name": "drawer",
   "title": "Drawer",
   "description": "Bottom sheet built on Vaul (mobile-friendly).",
-  "dependencies": [
-    "vaul"
-  ],
+  "dependencies": ["vaul"],
   "registryDependencies": [],
   "files": [
     {

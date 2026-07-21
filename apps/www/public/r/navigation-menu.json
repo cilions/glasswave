@@ -3,13 +3,8 @@
   "name": "navigation-menu",
   "title": "Navigation Menu",
   "description": "Site navigation with animated viewports (Radix Navigation Menu).",
-  "dependencies": [
-    "@radix-ui/react-navigation-menu",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-navigation-menu", "lucide-react"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/navigation-menu.tsx",

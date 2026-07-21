@@ -4,7 +4,7 @@ A component-based ui library for React with a liquid glass effect.
 
 ## Documentation
 
-Visit https://glasswave-ui.vercel.app/docs to view the documentation.
+Visit https://glasswave.denizisik.com/docs to view the documentation.
 
 ## License
 

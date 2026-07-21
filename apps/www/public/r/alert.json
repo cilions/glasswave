@@ -3,12 +3,8 @@
   "name": "alert",
   "title": "Alert",
   "description": "Displays a callout for user attention.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/alert.tsx",

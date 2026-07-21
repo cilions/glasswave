@@ -3,10 +3,7 @@
   "name": "command",
   "title": "Command",
   "description": "Command palette and searchable lists (cmdk).",
-  "dependencies": [
-    "cmdk",
-    "lucide-react"
-  ],
+  "dependencies": ["cmdk", "lucide-react"],
   "registryDependencies": [],
   "files": [
     {

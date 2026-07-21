@@ -3,10 +3,7 @@
   "name": "calendar",
   "title": "Calendar",
   "description": "Accessible date grid built on react-day-picker v9.",
-  "dependencies": [
-    "lucide-react",
-    "react-day-picker"
-  ],
+  "dependencies": ["lucide-react", "react-day-picker"],
   "registryDependencies": [],
   "files": [
     {

@@ -3,10 +3,7 @@
   "name": "date-picker",
   "title": "Date Picker",
   "description": "Popover trigger + single-date Calendar.",
-  "dependencies": [
-    "date-fns",
-    "lucide-react"
-  ],
+  "dependencies": ["date-fns", "lucide-react"],
   "registryDependencies": [
     "@glasswave/button",
     "@glasswave/calendar",
