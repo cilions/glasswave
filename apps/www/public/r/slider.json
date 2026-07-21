@@ -3,12 +3,8 @@
   "name": "slider",
   "title": "Slider",
   "description": "An input where the user selects a value from within a given range.",
-  "dependencies": [
-    "@radix-ui/react-slider"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-slider"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/slider.tsx",

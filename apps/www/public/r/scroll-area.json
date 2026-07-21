@@ -3,9 +3,7 @@
   "name": "scroll-area",
   "title": "Scroll Area",
   "description": "Augments native scroll functionality for custom, cross-browser styling.",
-  "dependencies": [
-    "@radix-ui/react-scroll-area"
-  ],
+  "dependencies": ["@radix-ui/react-scroll-area"],
   "registryDependencies": [],
   "files": [
     {

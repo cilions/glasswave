@@ -3,14 +3,8 @@
   "name": "context-menu",
   "title": "Context Menu",
   "description": "Right-click (or long-press) menu with glass styling.",
-  "dependencies": [
-    "@radix-ui/react-context-menu",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass",
-    "@glasswave/menu-classes"
-  ],
+  "dependencies": ["@radix-ui/react-context-menu", "lucide-react"],
+  "registryDependencies": ["@glasswave/glass", "@glasswave/menu-classes"],
   "files": [
     {
       "path": "registry/glasswave/ui/context-menu.tsx",

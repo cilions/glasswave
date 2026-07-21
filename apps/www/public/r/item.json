@@ -3,12 +3,8 @@
   "name": "item",
   "title": "Item",
   "description": "List row with optional glass variant and media slot.",
-  "dependencies": [
-    "@radix-ui/react-slot"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-slot"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/item.tsx",

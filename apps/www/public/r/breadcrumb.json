@@ -3,10 +3,7 @@
   "name": "breadcrumb",
   "title": "Breadcrumb",
   "description": "Navigation trail for the current page hierarchy.",
-  "dependencies": [
-    "@radix-ui/react-slot",
-    "lucide-react"
-  ],
+  "dependencies": ["@radix-ui/react-slot", "lucide-react"],
   "registryDependencies": [],
   "files": [
     {

@@ -3,14 +3,8 @@
   "name": "data-table",
   "title": "Data Table",
   "description": "TanStack Table headless bindings with glass table chrome.",
-  "dependencies": [
-    "@tanstack/react-table",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/button",
-    "@glasswave/table"
-  ],
+  "dependencies": ["@tanstack/react-table", "lucide-react"],
+  "registryDependencies": ["@glasswave/button", "@glasswave/table"],
   "files": [
     {
       "path": "registry/glasswave/ui/data-table.tsx",

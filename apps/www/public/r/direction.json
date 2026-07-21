@@ -3,9 +3,7 @@
   "name": "direction",
   "title": "Direction",
   "description": "Radix direction context for RTL-aware components.",
-  "dependencies": [
-    "@radix-ui/react-direction"
-  ],
+  "dependencies": ["@radix-ui/react-direction"],
   "registryDependencies": [],
   "files": [
     {

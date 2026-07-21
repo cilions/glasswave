@@ -4,9 +4,7 @@
   "title": "Field",
   "description": "\"Form field primitives: label, hint, and error.\"",
   "dependencies": [],
-  "registryDependencies": [
-    "@glasswave/label"
-  ],
+  "registryDependencies": ["@glasswave/label"],
   "files": [
     {
       "path": "registry/glasswave/ui/field.tsx",

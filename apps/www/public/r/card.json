@@ -4,9 +4,7 @@
   "title": "Card",
   "description": "Container for displaying structured information.",
   "dependencies": [],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/card.tsx",

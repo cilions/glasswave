@@ -3,13 +3,8 @@
   "name": "carousel",
   "title": "Carousel",
   "description": "Embla-powered horizontal slider with prev/next controls.",
-  "dependencies": [
-    "embla-carousel-react",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@glasswave/button"
-  ],
+  "dependencies": ["embla-carousel-react", "lucide-react"],
+  "registryDependencies": ["@glasswave/button"],
   "files": [
     {
       "path": "registry/glasswave/ui/carousel.tsx",

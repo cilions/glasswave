@@ -3,9 +3,7 @@
   "name": "spinner",
   "title": "Spinner",
   "description": "An animated loading indicator.",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [],
   "files": [
     {

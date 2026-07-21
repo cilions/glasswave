@@ -3,9 +3,7 @@
   "name": "combobox",
   "title": "Combobox",
   "description": "Searchable select pattern using Popover + Command.",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [
     "@glasswave/button",
     "@glasswave/command",

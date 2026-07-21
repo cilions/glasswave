@@ -3,13 +3,8 @@
   "name": "dropdown",
   "title": "Dropdown",
   "description": "Dropdown menu for options selection.",
-  "dependencies": [
-    "@radix-ui/react-dropdown-menu"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass",
-    "@glasswave/menu-classes"
-  ],
+  "dependencies": ["@radix-ui/react-dropdown-menu"],
+  "registryDependencies": ["@glasswave/glass", "@glasswave/menu-classes"],
   "files": [
     {
       "path": "registry/glasswave/ui/dropdown.tsx",

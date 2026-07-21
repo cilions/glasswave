@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "glasswave",
-  "homepage": "https://glasswave-ui.vercel.app",
+  "homepage": "https://glasswave.denizisik.com",
   "items": [
     {
       "name": "glass",

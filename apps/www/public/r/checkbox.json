@@ -3,12 +3,8 @@
   "name": "checkbox",
   "title": "Checkbox",
   "description": "Checkbox for boolean input.",
-  "dependencies": [
-    "@radix-ui/react-checkbox"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-checkbox"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/checkbox.tsx",

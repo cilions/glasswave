@@ -8,9 +8,7 @@
     "class-variance-authority",
     "lucide-react"
   ],
-  "registryDependencies": [
-    "@glasswave/button"
-  ],
+  "registryDependencies": ["@glasswave/button"],
   "files": [
     {
       "path": "registry/glasswave/ui/sheet.tsx",

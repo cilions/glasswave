@@ -3,10 +3,7 @@
   "name": "resizable",
   "title": "Resizable",
   "description": "Split panes with react-resizable-panels v4 (`Group` / `Panel` / `Separator`).",
-  "dependencies": [
-    "lucide-react",
-    "react-resizable-panels"
-  ],
+  "dependencies": ["lucide-react", "react-resizable-panels"],
   "registryDependencies": [],
   "files": [
     {

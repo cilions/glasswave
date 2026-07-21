@@ -3,13 +3,8 @@
   "name": "toggle",
   "title": "Toggle",
   "description": "A two-state button that can be either on or off.",
-  "dependencies": [
-    "@radix-ui/react-toggle",
-    "class-variance-authority"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-toggle", "class-variance-authority"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/toggle.tsx",

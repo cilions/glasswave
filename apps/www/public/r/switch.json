@@ -3,12 +3,8 @@
   "name": "switch",
   "title": "Switch",
   "description": "Toggle switch component.",
-  "dependencies": [
-    "@radix-ui/react-switch"
-  ],
-  "registryDependencies": [
-    "@glasswave/glass"
-  ],
+  "dependencies": ["@radix-ui/react-switch"],
+  "registryDependencies": ["@glasswave/glass"],
   "files": [
     {
       "path": "registry/glasswave/ui/switch.tsx",

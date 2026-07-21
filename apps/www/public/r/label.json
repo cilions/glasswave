@@ -3,10 +3,7 @@
   "name": "label",
   "title": "Label",
   "description": "Accessible label associated with controls.",
-  "dependencies": [
-    "@radix-ui/react-label",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@radix-ui/react-label", "class-variance-authority"],
   "registryDependencies": [],
   "files": [
     {
